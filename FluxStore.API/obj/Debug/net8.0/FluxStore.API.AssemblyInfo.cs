@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("FluxStore.API")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9ad5650c9a967c0d997a39754d6e5aeecd49f456")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1be733f594c723c8cad4923b5fa691b41a8ca294")]
 [assembly: System.Reflection.AssemblyProductAttribute("FluxStore.API")]
 [assembly: System.Reflection.AssemblyTitleAttribute("FluxStore.API")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

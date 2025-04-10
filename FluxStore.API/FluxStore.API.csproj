@@ -28,7 +28,6 @@
   <ItemGroup>
     <None Remove="Controllers\" />
     <None Remove="EmptyTextFile.txt" />
-    <None Remove=".gitignore" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Controllers\" />
@@ -44,8 +43,5 @@
     <Content Remove="wwwroot\.well-known\apple-app-site-association.json" />
     <Content Remove="wwwroot\.well-known\assetlinks.json" />
     <Content Remove="wwwroot\.well-known\" />
-  </ItemGroup>
-  <ItemGroup>
-    <Compile Include=".gitignore" />
   </ItemGroup>
 </Project>
