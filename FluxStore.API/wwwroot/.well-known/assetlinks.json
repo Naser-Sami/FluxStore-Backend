@@ -1,0 +1,12 @@
+﻿[
+  {
+    "relation": [ "delegate_permission/common.handle_all_urls" ],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.example.flux_store",
+      "sha256_cert_fingerprints": [
+        "90:A7:F9:1C:DE:8B:E6:49:0C:CD:F5:0A:EC:FB:AE:BD:68:E5:40:F7:36:B6:F4:C7:36:E3:C6:3F:A0:7F:EB:51"
+      ]
+    }
+  }
+]
