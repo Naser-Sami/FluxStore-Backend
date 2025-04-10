@@ -1,1 +1,25 @@
 ﻿
+# Ignore user secrets & sensitive configs
+appsettings.Development.json
+appsettings.Local.json
+secrets.json
+
+# Ignore compiled binaries
+bin/
+obj/
+
+# Ignore build logs
+*.log
+
+# Ignore Visual Studio / Rider files
+.vscode/
+.idea/
+*.user
+*.suo
+
+# Ignore publish output
+publish/
+
+# Ignore .NET environment files
+.env
+.env.*
