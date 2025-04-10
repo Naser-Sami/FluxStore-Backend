@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "ofrWscqqsAfmQa3PagPZlFbgHNZUNLIPEmsMh3x8PJA=",
+  "Source": "FluxStore.API",
+  "BasePath": "_content/FluxStore.API",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

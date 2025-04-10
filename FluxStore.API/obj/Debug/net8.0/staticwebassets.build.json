@@ -1,0 +1,20 @@
+{
+  "Version": 1,
+  "Hash": "gFk7Sow5peWLj6Rb99GvDddIdMm2QeEycZIpVoQJSZs=",
+  "Source": "FluxStore.API",
+  "BasePath": "_content/FluxStore.API",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "FluxStore.API/wwwroot",
+      "Source": "FluxStore.API",
+      "ContentRoot": "/Users/naserebedo/Developer/__Mobile__/_FluxStore_/Backend/FluxStore/FluxStore.API/wwwroot/",
+      "BasePath": "_content/FluxStore.API",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [],
+  "Endpoints": []
+}

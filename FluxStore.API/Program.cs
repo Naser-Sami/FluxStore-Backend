@@ -26,6 +26,7 @@ builder.Services.AddSingleton(mailSmtpSettings);
 builder.Services.AddScoped<IAuthService, AuthService>();
 builder.Services.AddTransient<IEmailService, EmailService>();
 builder.Services.AddScoped<ICategoryService, CategoryService>();
+builder.Services.AddScoped<ICollectionService, CollectionService>();
 
 // Add Controllers
 builder.Services.AddControllers();

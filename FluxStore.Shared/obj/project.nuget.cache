@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "q5Qzch/w/xs=",
+  "success": true,
+  "projectFilePath": "/Users/naserebedo/Developer/__Mobile__/_FluxStore_/Backend/FluxStore/FluxStore.Shared/FluxStore.Shared.csproj",
+  "expectedPackageFiles": [
+    "/Users/naserebedo/.nuget/packages/microsoft.netcore.app.ref/8.0.14/microsoft.netcore.app.ref.8.0.14.nupkg.sha512",
+    "/Users/naserebedo/.nuget/packages/microsoft.aspnetcore.app.ref/8.0.14/microsoft.aspnetcore.app.ref.8.0.14.nupkg.sha512"
+  ],
+  "logs": []
+}
