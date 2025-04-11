@@ -24,12 +24,14 @@
   </ItemGroup>
   <ItemGroup>
     <None Remove="Persistence\" />
-    <None Remove="Auth\" />
+    <None Remove="Persistence\Configuration\" />
+    <None Remove="Repositories\" />
     <None Remove="Services\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Persistence\" />
-    <Folder Include="Auth\" />
+    <Folder Include="Persistence\Configuration\" />
+    <Folder Include="Repositories\" />
     <Folder Include="Services\" />
   </ItemGroup>
 </Project>

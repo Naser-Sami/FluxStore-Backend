@@ -28,11 +28,13 @@
   <ItemGroup>
     <None Remove="Controllers\" />
     <None Remove="EmptyTextFile.txt" />
+    <None Remove="Middlewares\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Controllers\" />
     <Folder Include="wwwroot\" />
     <Folder Include="wwwroot\.well-known\" />
+    <Folder Include="Middlewares\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="wwwroot\.well-known\apple-app-site-association.json" />

@@ -7,9 +7,15 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="Enums\" />
+    <None Remove="Constants\" />
+    <None Remove="Exceptions\" />
+    <None Remove="Responses\" />
+    <None Remove="Settings\" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Enums\" />
+    <Folder Include="Constants\" />
+    <Folder Include="Exceptions\" />
+    <Folder Include="Responses\" />
+    <Folder Include="Settings\" />
   </ItemGroup>
 </Project>

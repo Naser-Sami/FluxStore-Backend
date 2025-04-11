@@ -8,9 +8,9 @@
 /Users/naserebedo/Developer/__Mobile__/_FluxStore_/Backend/FluxStore/FluxStore.Domain/obj/Debug/net8.0/FluxStore.Domain.AssemblyInfoInputs.cache
 /Users/naserebedo/Developer/__Mobile__/_FluxStore_/Backend/FluxStore/FluxStore.Domain/obj/Debug/net8.0/FluxStore.Domain.AssemblyInfo.cs
 /Users/naserebedo/Developer/__Mobile__/_FluxStore_/Backend/FluxStore/FluxStore.Domain/obj/Debug/net8.0/FluxStore.Domain.csproj.CoreCompileInputs.cache
+/Users/naserebedo/Developer/__Mobile__/_FluxStore_/Backend/FluxStore/FluxStore.Domain/obj/Debug/net8.0/FluxStore.Domain.sourcelink.json
 /Users/naserebedo/Developer/__Mobile__/_FluxStore_/Backend/FluxStore/FluxStore.Domain/obj/Debug/net8.0/FluxStor.E27E7047.Up2Date
 /Users/naserebedo/Developer/__Mobile__/_FluxStore_/Backend/FluxStore/FluxStore.Domain/obj/Debug/net8.0/FluxStore.Domain.dll
 /Users/naserebedo/Developer/__Mobile__/_FluxStore_/Backend/FluxStore/FluxStore.Domain/obj/Debug/net8.0/refint/FluxStore.Domain.dll
 /Users/naserebedo/Developer/__Mobile__/_FluxStore_/Backend/FluxStore/FluxStore.Domain/obj/Debug/net8.0/FluxStore.Domain.pdb
 /Users/naserebedo/Developer/__Mobile__/_FluxStore_/Backend/FluxStore/FluxStore.Domain/obj/Debug/net8.0/ref/FluxStore.Domain.dll
-/Users/naserebedo/Developer/__Mobile__/_FluxStore_/Backend/FluxStore/FluxStore.Domain/obj/Debug/net8.0/FluxStore.Domain.sourcelink.json

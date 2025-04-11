@@ -13,10 +13,10 @@
 /Users/naserebedo/Developer/__Mobile__/_FluxStore_/Backend/FluxStore/FluxStore.Infrastructure/obj/Debug/net8.0/FluxStore.Infrastructure.AssemblyInfoInputs.cache
 /Users/naserebedo/Developer/__Mobile__/_FluxStore_/Backend/FluxStore/FluxStore.Infrastructure/obj/Debug/net8.0/FluxStore.Infrastructure.AssemblyInfo.cs
 /Users/naserebedo/Developer/__Mobile__/_FluxStore_/Backend/FluxStore/FluxStore.Infrastructure/obj/Debug/net8.0/FluxStore.Infrastructure.csproj.CoreCompileInputs.cache
+/Users/naserebedo/Developer/__Mobile__/_FluxStore_/Backend/FluxStore/FluxStore.Infrastructure/obj/Debug/net8.0/FluxStore.Infrastructure.sourcelink.json
 /Users/naserebedo/Developer/__Mobile__/_FluxStore_/Backend/FluxStore/FluxStore.Infrastructure/obj/Debug/net8.0/FluxStor.7F6A68DB.Up2Date
 /Users/naserebedo/Developer/__Mobile__/_FluxStore_/Backend/FluxStore/FluxStore.Infrastructure/obj/Debug/net8.0/FluxStore.Infrastructure.dll
 /Users/naserebedo/Developer/__Mobile__/_FluxStore_/Backend/FluxStore/FluxStore.Infrastructure/obj/Debug/net8.0/refint/FluxStore.Infrastructure.dll
 /Users/naserebedo/Developer/__Mobile__/_FluxStore_/Backend/FluxStore/FluxStore.Infrastructure/obj/Debug/net8.0/FluxStore.Infrastructure.pdb
 /Users/naserebedo/Developer/__Mobile__/_FluxStore_/Backend/FluxStore/FluxStore.Infrastructure/obj/Debug/net8.0/FluxStore.Infrastructure.genruntimeconfig.cache
 /Users/naserebedo/Developer/__Mobile__/_FluxStore_/Backend/FluxStore/FluxStore.Infrastructure/obj/Debug/net8.0/ref/FluxStore.Infrastructure.dll
-/Users/naserebedo/Developer/__Mobile__/_FluxStore_/Backend/FluxStore/FluxStore.Infrastructure/obj/Debug/net8.0/FluxStore.Infrastructure.sourcelink.json

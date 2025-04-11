@@ -5,6 +5,7 @@
 /Users/naserebedo/Developer/__Mobile__/_FluxStore_/Backend/FluxStore/FluxStore.Shared/obj/Debug/net8.0/FluxStore.Shared.AssemblyInfoInputs.cache
 /Users/naserebedo/Developer/__Mobile__/_FluxStore_/Backend/FluxStore/FluxStore.Shared/obj/Debug/net8.0/FluxStore.Shared.AssemblyInfo.cs
 /Users/naserebedo/Developer/__Mobile__/_FluxStore_/Backend/FluxStore/FluxStore.Shared/obj/Debug/net8.0/FluxStore.Shared.csproj.CoreCompileInputs.cache
+/Users/naserebedo/Developer/__Mobile__/_FluxStore_/Backend/FluxStore/FluxStore.Shared/obj/Debug/net8.0/FluxStore.Shared.sourcelink.json
 /Users/naserebedo/Developer/__Mobile__/_FluxStore_/Backend/FluxStore/FluxStore.Shared/obj/Debug/net8.0/FluxStore.Shared.dll
 /Users/naserebedo/Developer/__Mobile__/_FluxStore_/Backend/FluxStore/FluxStore.Shared/obj/Debug/net8.0/refint/FluxStore.Shared.dll
 /Users/naserebedo/Developer/__Mobile__/_FluxStore_/Backend/FluxStore/FluxStore.Shared/obj/Debug/net8.0/FluxStore.Shared.pdb

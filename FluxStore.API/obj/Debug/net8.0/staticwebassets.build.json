@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "gFk7Sow5peWLj6Rb99GvDddIdMm2QeEycZIpVoQJSZs=",
+  "Hash": "ANgz+NBT8daKzO51IxYGd5RBr5PrDLoUTBQmBvx75bk=",
   "Source": "FluxStore.API",
   "BasePath": "_content/FluxStore.API",
   "Mode": "Default",
@@ -15,6 +15,5 @@
       "Pattern": "**"
     }
   ],
-  "Assets": [],
-  "Endpoints": []
+  "Assets": []
 }
