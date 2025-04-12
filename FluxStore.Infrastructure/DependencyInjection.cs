@@ -1,8 +1,10 @@
 ﻿using FluxStore.Application.Common.Interfaces;
 using FluxStore.Application.Interfaces;
+using FluxStore.Domain.Interfaces;
 using FluxStore.Domain.Repositories;
 using FluxStore.Infrastructure.Persistence;
 using FluxStore.Infrastructure.Persistence.Repositories;
+using FluxStore.Infrastructure.Repositories;
 using FluxStore.Infrastructure.Services;
 using FlxStore.Infrastructure.Services;
 using Microsoft.EntityFrameworkCore;
@@ -23,6 +25,7 @@ public static class DependencyInjection
         services.AddScoped<IPasswordHasher, PasswordHasher>();
         services.AddSingleton<ITokenService, TokenService>();
         services.AddHttpContextAccessor();
+        services.AddScoped<ICategoryRepository, CategoryRepository>();
 
         return services;
     }
