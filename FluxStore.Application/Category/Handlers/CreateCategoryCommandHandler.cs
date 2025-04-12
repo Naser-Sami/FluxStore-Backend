@@ -16,7 +16,7 @@ namespace FluxStore.Application.Commands.Category.Handlers
 
         public async Task<Result> Handle(CreateCategoryCommand request, CancellationToken cancellationToken)
         {
-            var category = new Domain.Entities.CategoryEntity
+            var category = new Domain.Entities.Category
             {
                 Id = Guid.NewGuid(),
                 Name = request.Name,

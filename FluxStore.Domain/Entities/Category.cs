@@ -1,6 +1,6 @@
 ﻿namespace FluxStore.Domain.Entities
 {
-    public class CategoryEntity
+    public class Category
     {
         public Guid Id { get; set; }
         public string Name { get; set; } = default!;
@@ -9,5 +9,7 @@
 
         public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
         public DateTime? UpdatedAt { get; set; }
+
+        public ICollection<Product> Products { get; set; } = new List<Product>();
     }
 }

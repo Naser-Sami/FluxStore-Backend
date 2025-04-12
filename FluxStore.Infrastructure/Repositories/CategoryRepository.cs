@@ -14,30 +14,30 @@ namespace FluxStore.Infrastructure.Repositories
             _context = context;
         }
 
-        public async Task AddAsync(CategoryEntity category)
+        public async Task AddAsync(Category category)
         {
             _context.Categories.Add(category);
             await _context.SaveChangesAsync();
         }
 
-        public async Task UpdateAsync(CategoryEntity category)
+        public async Task UpdateAsync(Category category)
         {
             _context.Categories.Update(category);
             await _context.SaveChangesAsync();
         }
 
-        public async Task DeleteAsync(CategoryEntity category)
+        public async Task DeleteAsync(Category category)
         {
             _context.Categories.Remove(category);
             await _context.SaveChangesAsync();
         }
 
-        public async Task<CategoryEntity?> GetByIdAsync(Guid id)
+        public async Task<Category?> GetByIdAsync(Guid id)
         {
             return await _context.Categories.FindAsync(id);
         }
 
-        public async Task<List<CategoryEntity>> GetAllAsync()
+        public async Task<List<Category>> GetAllAsync()
         {
             return await _context.Categories.ToListAsync();
         }

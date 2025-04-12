@@ -66,6 +66,7 @@
 /Users/naserebedo/Developer/__Mobile__/_FluxStore_/Backend/FluxStore/FluxStore.API/bin/Debug/net8.0/System.Composition.TypedParts.dll
 /Users/naserebedo/Developer/__Mobile__/_FluxStore_/Backend/FluxStore/FluxStore.API/bin/Debug/net8.0/System.Configuration.ConfigurationManager.dll
 /Users/naserebedo/Developer/__Mobile__/_FluxStore_/Backend/FluxStore/FluxStore.API/bin/Debug/net8.0/System.Drawing.Common.dll
+/Users/naserebedo/Developer/__Mobile__/_FluxStore_/Backend/FluxStore/FluxStore.API/bin/Debug/net8.0/System.Formats.Asn1.dll
 /Users/naserebedo/Developer/__Mobile__/_FluxStore_/Backend/FluxStore/FluxStore.API/bin/Debug/net8.0/System.IdentityModel.Tokens.Jwt.dll
 /Users/naserebedo/Developer/__Mobile__/_FluxStore_/Backend/FluxStore/FluxStore.API/bin/Debug/net8.0/System.Memory.Data.dll
 /Users/naserebedo/Developer/__Mobile__/_FluxStore_/Backend/FluxStore/FluxStore.API/bin/Debug/net8.0/System.Runtime.Caching.dll
@@ -169,4 +170,3 @@
 /Users/naserebedo/Developer/__Mobile__/_FluxStore_/Backend/FluxStore/FluxStore.API/obj/Debug/net8.0/FluxStore.API.pdb
 /Users/naserebedo/Developer/__Mobile__/_FluxStore_/Backend/FluxStore/FluxStore.API/obj/Debug/net8.0/FluxStore.API.genruntimeconfig.cache
 /Users/naserebedo/Developer/__Mobile__/_FluxStore_/Backend/FluxStore/FluxStore.API/obj/Debug/net8.0/ref/FluxStore.API.dll
-/Users/naserebedo/Developer/__Mobile__/_FluxStore_/Backend/FluxStore/FluxStore.API/bin/Debug/net8.0/System.Formats.Asn1.dll

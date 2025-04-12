@@ -9,7 +9,8 @@ namespace FluxStore.Infrastructure.Persistence
 
         public DbSet<UserEntity> Users => Set<UserEntity>();
         public DbSet<Role> Roles => Set<Role>();
-        public DbSet<CategoryEntity> Categories => Set<CategoryEntity>();
+        public DbSet<Category> Categories => Set<Category>();
+        public DbSet<Product> Products => Set<Product>();
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

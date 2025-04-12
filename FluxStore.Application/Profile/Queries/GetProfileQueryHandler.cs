@@ -1,5 +1,4 @@
 ﻿using FluxStore.Application.Common;
-using FluxStore.Application.Common.Interfaces;
 using FluxStore.Application.DTOs.Profile;
 using FluxStore.Domain.Repositories;
 using MediatR;
