@@ -3,7 +3,7 @@ using MediatR;
 
 namespace FluxStore.Application.Commands.Category.Queries
 {
-    public class UpdateCategoryCommand : IRequest<Result>
+    public class UpdateCategoryCommand : IRequest<Result<string>>
     {
         public Guid Id { get; set; }
         public string Name { get; set; } = default!;

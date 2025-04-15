@@ -1,54 +1,64 @@
 ﻿<Properties StartupConfiguration="{AEA81E27-68A3-43C4-83B3-767FBACCE9EE}|https">
+  <MonoDevelop.Ide.ItemProperties.FluxStore.API PreferredExecutionTarget="/System/Volumes/Preboot/Cryptexes/App/System/Applications/Safari.app" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
+    <BreakpointStore>
+      <Breakpoint file="/Users/naserebedo/Developer/__Mobile__/_FluxStore_/Backend/FluxStore/FluxStore.Infrastructure/Services/AuthService.cs" relfile="FluxStore.Infrastructure/Services/AuthService.cs" line="25" column="1" />
+      <Breakpoint file="/Users/naserebedo/Developer/__Mobile__/_FluxStore_/Backend/FluxStore/FluxStore.Application/Auth/Handlers/ResetPasswordCommandHandler.cs" relfile="FluxStore.Application/Auth/Handlers/ResetPasswordCommandHandler.cs" line="28" column="1" />
+    </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.Workbench ActiveDocument="FluxStore.Domain/Configuration/ProductCollectionConfiguration.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="FluxStore.Application/Category/Handlers/UpdateCategoryCommandHandler.cs">
     <Files>
-      <File FileName="FluxStore.Domain/Configuration/CategoryConfiguration.cs" Line="27" Column="19" />
-      <File FileName="FluxStore.Domain/Configuration/ProductCollectionConfiguration.cs" Line="26" Column="2" />
-      <File FileName="FluxStore.Domain/Configuration/ProductConfiguration.cs" Line="15" Column="1" />
-      <File FileName="FluxStore.Infrastructure/Persistence/ApplicationDbContext.cs" />
-      <File FileName="FluxStore.Domain/Entities/ProductCollection.cs" />
-      <File FileName="FluxStore.Application/DTOs/CollectionDto.cs" />
-      <File FileName="FluxStore.Infrastructure/Services/CollectionService.cs" />
-      <File FileName="FluxStore.Application/Interfaces/ICollectionService.cs" Line="5" Column="37" />
-      <File FileName="FluxStore.API/Controllers/CollectionsController.cs" Line="12" Column="1" />
-      <File FileName="FluxStore.API/Program.cs" Line="62" Column="1" />
-      <File FileName="FluxStore.API/appsettings.json" />
-      <File FileName="FluxStore.API/appsettings.Development.json" Line="14" Column="13" />
-      <File FileName="FluxStore.Infrastructure/Services/CategoryService.cs" Line="56" Column="23" />
-      <File FileName="FluxStore.Application/DTOs/CategoryDto.cs" Line="7" Column="8" />
-      <File FileName="FluxStore.Infrastructure/Migrations/20250410072930_UpdateCategoryIdToGuid.Designer.cs" Line="1" Column="1" />
-      <File FileName="FluxStore.Domain/Configuration/CollectionConfiguration.cs" Line="15" Column="1" />
+      <File FileName="FluxStore.API/Controllers/CategoryController.cs" Line="36" Column="10" />
+      <File FileName="FluxStore.Application/Products/Interfaces/IProductRepository.cs" Line="15" Column="1" />
+      <File FileName="FluxStore.Application/Category/Commands/CreateCategoryCommand.cs" Line="12" Column="2" />
+      <File FileName="FluxStore.Application/Category/Handlers/CreateCategoryCommandHandler.cs" Line="29" Column="65" />
+      <File FileName="FluxStore.Application/Category/Handlers/DeleteCategoryCommandHandler.cs" Line="24" Column="65" />
+      <File FileName="FluxStore.Application/Category/Commands/DeleteCategoryCommand.cs" Line="13" Column="10" />
+      <File FileName="FluxStore.Application/Category/Handlers/GetAllCategoriesQueryHandler.cs" Line="1" Column="1" />
+      <File FileName="FluxStore.Application/Category/Handlers/GetCategoryByIdQueryHandler.cs" Line="1" Column="1" />
+      <File FileName="FluxStore.Application/Category/Handlers/UpdateCategoryCommandHandler.cs" Line="29" Column="65" />
+      <File FileName="FluxStore.Application/Category/Commands/UpdateCategoryCommand.cs" Line="16" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="FluxStore">
+          <Node name="FluxStore" expanded="True">
             <Node name="FluxStore.API">
               <Node name="Controllers" expanded="True" />
-              <Node name="Properties" expanded="True" />
-              <Node name="wwwroot" expanded="True" />
-              <Node name="appsettings.json" expanded="True" />
             </Node>
             <Node name="FluxStore.Application">
-              <Node name="Interfaces" expanded="True" />
+              <Node name="Category">
+                <Node name="DTOs" expanded="True" />
+                <Node name="Handlers">
+                  <Node name="UpdateCategoryCommandHandler.cs" selected="True" />
+                </Node>
+                <Node name="Interfaces" expanded="True" />
+                <Node name="Queries" expanded="True" />
+              </Node>
+              <Node name="Profile" expanded="True" />
             </Node>
             <Node name="FluxStore.Domain">
-              <Node name="Configuration" expanded="True">
-                <Node name="ProductCollectionConfiguration.cs" selected="True" />
-              </Node>
+              <Node name="Common" expanded="True" />
+              <Node name="Entities" expanded="True" />
             </Node>
             <Node name="FluxStore.Infrastructure">
+              <Node name="Persistence" expanded="True">
+                <Node name="Configuration" expanded="True" />
+              </Node>
+              <Node name="Repositories" expanded="True" />
               <Node name="Services" expanded="True" />
+            </Node>
+            <Node name="FluxStore.Shared">
+              <Node name="Exceptions" expanded="True" />
+              <Node name="Responses" expanded="True" />
+              <Node name="Settings" expanded="True" />
             </Node>
           </Node>
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.ItemProperties.FluxStore.API PreferredExecutionTarget="/System/Volumes/Preboot/Cryptexes/App/System/Applications/Safari.app" />
 </Properties>

@@ -3,7 +3,7 @@ using MediatR;
 
 namespace FluxStore.Application.Commands.Category.Queries
 {
-    public class DeleteCategoryCommand : IRequest<Result>
+    public class DeleteCategoryCommand : IRequest<Result<string>>
     {
         public Guid Id { get; }
 

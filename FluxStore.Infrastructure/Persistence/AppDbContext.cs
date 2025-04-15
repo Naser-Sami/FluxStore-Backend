@@ -1,16 +1,20 @@
-﻿using FluxStore.Domain.Entities;
+﻿using FluxStore.Application.Interfaces;
+using FluxStore.Domain.Entities;
 using Microsoft.EntityFrameworkCore;
 
 namespace FluxStore.Infrastructure.Persistence
 {
-	public class AppDbContext : DbContext
-	{
+	public class AppDbContext : DbContext, IApplicationDbContext
+    {
 		public AppDbContext(DbContextOptions<AppDbContext> options) : base(options) {}
 
         public DbSet<UserEntity> Users => Set<UserEntity>();
         public DbSet<Role> Roles => Set<Role>();
-        public DbSet<Category> Categories => Set<Category>();
-        public DbSet<Product> Products => Set<Product>();
+
+        public DbSet<Product> Products { get; set; }
+        public DbSet<Category> Categories { get; set; }
+        public DbSet<ProductRating> Ratings { get; set; }
+        public DbSet<ProductReview> Reviews { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

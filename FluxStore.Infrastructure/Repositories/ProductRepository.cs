@@ -45,6 +45,13 @@ namespace FluxStore.Infrastructure.Repositories
             _context.Products.Update(product);
             await _context.SaveChangesAsync();
         }
+
+        public async Task<Product?> GetWithCategoryByIdAsync(Guid id)
+        {
+            return await _context.Products
+                .Include(p => p.Category)
+                .FirstOrDefaultAsync(p => p.Id == id);
+        }
     }
 }
 

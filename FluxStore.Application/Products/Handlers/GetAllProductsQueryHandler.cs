@@ -19,15 +19,17 @@ namespace FluxStore.Application.Products.Handlers
         {
             var products = await _productRepository.GetAllAsync();
 
+
             var result = products.Select(p => new ProductDto
             {
                 Id = p.Id,
                 Name = p.Name,
-                Description = p.Description,
+                Description = p.Description ?? "",
                 Price = p.Price,
-                ImageUrl = p.ImageUrl,
                 Stock = p.Stock,
-                CategoryId = p.CategoryId
+                ImageUrl = p.ImageUrl ?? "",
+                CategoryId = p.CategoryId,
+                CreatedAt = DateTime.UtcNow
             }).ToList();
 
             return Result<List<ProductDto>>.Success(result);

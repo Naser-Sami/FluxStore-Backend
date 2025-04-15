@@ -5,7 +5,7 @@ using MediatR;
 
 namespace FluxStore.Application.Commands.Category.Handlers
 {
-	public class DeleteCategoryCommandHandler : IRequestHandler<DeleteCategoryCommand, Result>
+	public class DeleteCategoryCommandHandler : IRequestHandler<DeleteCategoryCommand, Result<string>>
     {
         private readonly ICategoryRepository _repository;
 
@@ -14,11 +14,11 @@ namespace FluxStore.Application.Commands.Category.Handlers
             _repository = repository;
         }
 
-        public async Task<Result> Handle(DeleteCategoryCommand request, CancellationToken cancellationToken)
+        public async Task<Result<string>> Handle(DeleteCategoryCommand request, CancellationToken cancellationToken)
         {
             var category = await _repository.GetByIdAsync(request.Id);
             if (category == null)
-                return Result.Failure("Category not found");
+                return Result.Failure<string>("Category not found");
 
             await _repository.DeleteAsync(category);
             return Result.Success("Category deleted successfully");

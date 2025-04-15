@@ -1,4 +1,5 @@
-﻿using FluxStore.Application.Auth.Commands.ForgotPassword;
+﻿using FluxStore.Application.Auth.Commands;
+using FluxStore.Application.Auth.Commands.ForgotPassword;
 using FluxStore.Application.Auth.Commands.ResetPassword;
 using FluxStore.Application.DTOs.Auth;
 using FluxStore.Application.Interfaces;
@@ -59,6 +60,13 @@ public class AuthController : ControllerBase
     public async Task<IActionResult> ResetPassword(ResetPasswordCommand command)
     {
         var result = await _mediator.Send(command);
-        return result.IsSuccess ? Ok() : BadRequest(result.Message);
+        return result.IsSuccess ? Ok(result.Data) : BadRequest(result.Message);
+    }
+
+    [HttpPost("refresh")]
+    public async Task<IActionResult> Refresh([FromBody] RefreshTokenCommand command)
+    {
+        var result = await _mediator.Send(command);
+        return Ok(result);
     }
 }

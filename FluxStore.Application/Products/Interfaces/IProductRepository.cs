@@ -9,5 +9,6 @@ namespace FluxStore.Application.Interfaces
         Task CreateAsync(Product product);
         Task UpdateAsync(Product product);
         Task DeleteAsync(Guid id);
+        Task<Product?> GetWithCategoryByIdAsync(Guid id);
     }
 }

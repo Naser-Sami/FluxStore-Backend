@@ -2,6 +2,7 @@
 using FluxStore.Application.Common;
 using FluxStore.Application.DTOs.Product;
 using FluxStore.Application.Interfaces;
+using FluxStore.Domain.Entities;
 using MediatR;
 
 namespace FluxStore.Application.Products.Handlers
@@ -21,15 +22,17 @@ namespace FluxStore.Application.Products.Handlers
             if (product == null)
                 return Result<ProductDto>.Failure("Product not found");
 
+
             var dto = new ProductDto
             {
                 Id = product.Id,
                 Name = product.Name,
-                Description = product.Description,
+                Description = product.Description ?? "",
                 Price = product.Price,
-                ImageUrl = product.ImageUrl,
                 Stock = product.Stock,
-                CategoryId = product.CategoryId
+                ImageUrl = product.ImageUrl ?? "",
+                CategoryId = product.CategoryId,
+                CreatedAt = product.CreatedAt
             };
 
             return Result<ProductDto>.Success(dto);

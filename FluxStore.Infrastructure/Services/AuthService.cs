@@ -1,4 +1,5 @@
-﻿using FluxStore.Application.Common.Interfaces;
+﻿using System.Security.Cryptography;
+using FluxStore.Application.Common.Interfaces;
 using FluxStore.Application.DTOs.Auth;
 using FluxStore.Application.Interfaces;
 using FluxStore.Domain.Entities;
@@ -40,10 +41,13 @@ public class AuthService : IAuthService
             PhoneNumber = "",
             Address = "",
             ImageUrl = "",
-            Role = "Customer"
-        };
+            Role = "Customer",
+            RefreshToken = "",
+            RefreshTokenExpiryTime = DateTime.UtcNow.AddDays(7)
+    };
 
         user.PasswordHash = _passwordHasher.HashPassword(user, request.Password);
+        user.RefreshToken = GenerateRefreshToken();
 
         _context.Users.Add(user);
         await _context.SaveChangesAsync();
@@ -67,13 +71,18 @@ public class AuthService : IAuthService
 
     private Task<AuthResponse> Response(UserEntity user)
     {
-        
         return Task.FromResult(new AuthResponse
         {
-            Token = _tokenService.GenerateToken(user),
+            Token = _tokenService.CreateToken(user),
+            RefreshToken = user.RefreshToken,
             Username = user.Username,
             Email = user.Email,
             Role = user.Role
         });
+    }
+
+    private string GenerateRefreshToken()
+    {
+        return Convert.ToBase64String(RandomNumberGenerator.GetBytes(64));
     }
 }

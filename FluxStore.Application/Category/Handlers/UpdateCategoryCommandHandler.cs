@@ -5,7 +5,7 @@ using MediatR;
 
 namespace FluxStore.Application.Commands.Category.Handlers
 {
-	public class UpdateCategoryCommandHandler : IRequestHandler<UpdateCategoryCommand, Result>
+	public class UpdateCategoryCommandHandler : IRequestHandler<UpdateCategoryCommand, Result<string>>
     {
         private readonly ICategoryRepository _repository;
 
@@ -14,11 +14,11 @@ namespace FluxStore.Application.Commands.Category.Handlers
             _repository = repository;
         }
 
-        public async Task<Result> Handle(UpdateCategoryCommand request, CancellationToken cancellationToken)
+        public async Task<Result<string>> Handle(UpdateCategoryCommand request, CancellationToken cancellationToken)
         {
             var category = await _repository.GetByIdAsync(request.Id);
             if (category == null)
-                return Result.Failure("Category not found");
+                return Result.Failure<string>("Category not found");
 
             category.Name = request.Name;
             category.Description = request.Description;

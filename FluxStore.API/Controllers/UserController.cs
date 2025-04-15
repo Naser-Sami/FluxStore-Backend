@@ -1,5 +1,4 @@
-﻿using FluxStore.Application.Profile.Queries;
-using FluxStore.Application.User.Command;
+﻿using FluxStore.Application.User.Command;
 using FluxStore.Application.User.Handlers;
 using MediatR;
 using Microsoft.AspNetCore.Authorization;
@@ -31,13 +30,6 @@ namespace FluxStore.API.Controllers
         {
             var result = await _mediator.Send(command);
             return result.IsSuccess ? Ok(result.Message) : BadRequest(result.Message);
-        }
-
-        [HttpGet("{userId:guid}")]
-        public async Task<IActionResult> GetProfile(Guid userId)
-        {
-            var result = await _mediator.Send(new GetProfileQuery(userId));
-            return result.IsSuccess ? Ok(result.Data) : NotFound(result.Message);
         }
     }
 }

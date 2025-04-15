@@ -4,8 +4,8 @@ namespace FluxStore.Domain.Entities
 {
 	public class UserEntity : BaseEntity
 	{
-        public string Username { get; set; } = null!;
-        public string Email { get; set; } = null!;
+        public required string Username { get; set; }
+        public required string Email { get; set; }
 
         public string? FirstName { get; set; }
         public string? LastName { get; set; }
@@ -18,5 +18,8 @@ namespace FluxStore.Domain.Entities
         public string? ImageUrl { get; set; }
 
         public string Role { get; set; } = "Customer";
+
+        public string RefreshToken { get; set; } = string.Empty;
+        public DateTime RefreshTokenExpiryTime { get; set; }
     }
 }

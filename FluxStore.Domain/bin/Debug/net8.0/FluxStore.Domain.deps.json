@@ -507,7 +507,10 @@
       "System.Text.Encodings.Web/8.0.0": {},
       "FluxStore.Shared/1.0.0": {
         "runtime": {
-          "FluxStore.Shared.dll": {}
+          "FluxStore.Shared.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       }
     }

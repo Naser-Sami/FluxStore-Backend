@@ -9,7 +9,7 @@ using Microsoft.AspNetCore.Identity;
 
 namespace FluxStore.Application.Auth.Commands.ResetPassword
 {
-    public class ResetPasswordCommandHandler : IRequestHandler<ResetPasswordCommand, Result>
+    public class ResetPasswordCommandHandler : IRequestHandler<ResetPasswordCommand, Result<string>>
     {
         private readonly IUserRepository _userRepository;
         private readonly PasswordHasher<UserEntity> _passwordHasher;
@@ -24,18 +24,18 @@ namespace FluxStore.Application.Auth.Commands.ResetPassword
             _tokenService = tokenService;
         }
 
-        public async Task<Result> Handle(ResetPasswordCommand request, CancellationToken cancellationToken)
+        public async Task<Result<string>> Handle(ResetPasswordCommand request, CancellationToken cancellationToken)
         {
             if (request.NewPassword != request.ConfirmPassword)
-                return Result.Failure("Passwords do not match");
+                return Result.Failure<string>("Passwords do not match");
 
             var user = await _userRepository.GetByEmailAsync(request.Email);
             if (user == null)
-                return Result.Failure("User not found");
+                return Result.Failure<string>("User not found");
 
             var isValid = _tokenService.ValidatePasswordResetToken(user, request.Token); // we'll handle this
             if (!isValid)
-                return Result.Failure("Invalid or expired reset token");
+                return Result.Failure<string>("Invalid or expired reset token");
 
             user.PasswordHash = _passwordHasher.HashPassword(user, request.NewPassword);
             await _userRepository.UpdateAsync(user);

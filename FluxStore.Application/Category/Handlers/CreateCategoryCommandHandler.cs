@@ -5,7 +5,7 @@ using MediatR;
 
 namespace FluxStore.Application.Commands.Category.Handlers
 {
-	public class CreateCategoryCommandHandler : IRequestHandler<CreateCategoryCommand, Result>
+	public class CreateCategoryCommandHandler : IRequestHandler<CreateCategoryCommand, Result<string>>
     {
         private readonly ICategoryRepository _repository;
 
@@ -14,7 +14,7 @@ namespace FluxStore.Application.Commands.Category.Handlers
             _repository = repository;
         }
 
-        public async Task<Result> Handle(CreateCategoryCommand request, CancellationToken cancellationToken)
+        public async Task<Result<string>> Handle(CreateCategoryCommand request, CancellationToken cancellationToken)
         {
             var category = new Domain.Entities.Category
             {

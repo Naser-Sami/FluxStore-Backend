@@ -12,6 +12,7 @@
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="MediatR" Version="8.1.0" />
+    <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="8.8.0" />
   </ItemGroup>
   <ItemGroup>
     <None Remove="Common\" />
@@ -20,7 +21,8 @@
     <None Remove="Products\Handlers\" />
     <None Remove="User\" />
     <None Remove="Category\" />
-    <None Remove="Profile\" />
+    <None Remove="Products\Mapper\" />
+    <None Remove="Interfaces\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Common\" />
@@ -29,6 +31,8 @@
     <Folder Include="Products\Handlers\" />
     <Folder Include="User\" />
     <Folder Include="Category\" />
+    <Folder Include="Products\Mapper\" />
+    <Folder Include="Interfaces\" />
     <Folder Include="Profile\" />
   </ItemGroup>
 </Project>

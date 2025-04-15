@@ -1,5 +1,6 @@
 ﻿using FluxStore.Application.Commands.Products.Commands;
 using FluxStore.Application.Commands.Products.Queries;
+using FluxStore.Application.Products.Queries;
 using MediatR;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
@@ -55,6 +56,12 @@ namespace FluxStore.API.Controllers
 			var result = await _mediator.Send(new DeleteProductCommand(id));
 			return result.IsSuccess ? Ok(result.Message) : NotFound(result.Message);
 		}
+
+        [HttpGet("{id:guid}/details")]
+        public async Task<IActionResult> GetDetails(Guid id)
+        {
+            var result = await _mediator.Send(new GetProductDetailsQuery(id));
+            return result.IsSuccess ? Ok(result.Data) : NotFound(result.Message);
+        }
     }
 }
-
