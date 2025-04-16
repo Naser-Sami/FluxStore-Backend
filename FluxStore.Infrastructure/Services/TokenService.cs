@@ -3,10 +3,10 @@ using System.Security.Claims;
 using System.Security.Cryptography;
 using System.Text;
 using FluxStore.Application.Common.Interfaces;
-using FluxStore.Application.Interfaces;
 using FluxStore.Domain.Entities;
 using FluxStore.Infrastructure.Persistence;
 using FlxStore.Shared.Settings;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
@@ -72,7 +72,7 @@ namespace FluxStore.Infrastructure.Services
                 ValidateAudience = false,
                 ValidateIssuer = false,
                 ValidateIssuerSigningKey = true,
-                IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_config["Jwt:Key"]!)),
+                IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_config["JwtSettings:Key"]!)),
                 ValidateLifetime = false // allow expired token
             };
 
@@ -93,24 +93,35 @@ namespace FluxStore.Infrastructure.Services
             return null;
         }
 
-        public void StorePasswordResetToken(string email, string token, TimeSpan validFor)
+        public async Task StorePasswordResetTokenAsync(string email, string token, TimeSpan validFor)
         {
             var expiry = DateTime.UtcNow.Add(validFor);
-            _resetTokens[token] = (email, expiry);
+            var resetToken = new PasswordResetToken
+            {
+                Email = email,
+                Token = token,
+                Expiry = expiry
+            };
+
+            _context.PasswordResetTokens.Add(resetToken);
+            await _context.SaveChangesAsync();
         }
 
-        public bool ValidatePasswordResetToken(UserEntity user, string token)
+        public async Task<bool> ValidatePasswordResetTokenAsync(UserEntity user, string token)
         {
-            if (_resetTokens.TryGetValue(token, out var entry))
-            {
-                if (entry.Email == user.Email && entry.Expiry > DateTime.UtcNow)
-                {
-                    _resetTokens.Remove(token); // one-time use
-                    return true;
-                }
-            }
+            var resetToken = await _context.PasswordResetTokens
+                .FirstOrDefaultAsync(t => t.Token == token);
 
-            return false;
+            if (resetToken == null)
+                return false;
+
+            if (resetToken.Email != user.Email || resetToken.Expiry <= DateTime.UtcNow)
+                return false;
+
+            _context.PasswordResetTokens.Remove(resetToken); // Invalidate after use
+            await _context.SaveChangesAsync();
+
+            return true;
         }
 
         public bool ValidateRefreshToken(UserEntity user, string refreshToken)

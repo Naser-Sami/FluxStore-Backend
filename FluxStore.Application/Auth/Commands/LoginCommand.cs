@@ -3,6 +3,10 @@ using MediatR;
 
 namespace FluxStore.Application.Auth.Commands
 {
-    public record LoginCommand(LoginRequest Request) : IRequest<AuthResponse>;
+    public class LoginCommand : IRequest<AuthResponse>
+    {
+        public required string Email { get; set; }
+        public required string Password { get; set; }
+    }
 }
 

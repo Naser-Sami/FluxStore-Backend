@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("FluxStore.Domain")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c9df45a01baa44a500d6eb5f8fd8c4f8dbf8e4fc")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d0b8e1c53739c36b4b1fd7da512c05e131b8fe68")]
 [assembly: System.Reflection.AssemblyProductAttribute("FluxStore.Domain")]
 [assembly: System.Reflection.AssemblyTitleAttribute("FluxStore.Domain")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

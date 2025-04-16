@@ -22,11 +22,17 @@ namespace FluxStore.Application.Auth.Handlers
 
         public async Task<AuthResponse> Handle(RefreshTokenCommand request, CancellationToken cancellationToken)
         {
-            var principal = _tokenService.GetPrincipalFromExpiredToken(request.Request.Token);
+            if (string.IsNullOrWhiteSpace(request.Token))
+                throw new SecurityTokenException("Access token is required.");
+
+            if (string.IsNullOrWhiteSpace(request.RefreshToken))
+                throw new SecurityTokenException("Refresh access token is required.");
+
+            var principal = _tokenService.GetPrincipalFromExpiredToken(request.Token);
             var email = principal?.FindFirstValue(ClaimTypes.Email);
 
             var user = await _context.Users.FirstOrDefaultAsync(u => u.Email == email, cancellationToken);
-            if (user == null || !_tokenService.ValidateRefreshToken(user, request.Request.RefreshToken))
+            if (user == null || !_tokenService.ValidateRefreshToken(user, request.RefreshToken))
             {
                 throw new SecurityTokenException("Invalid refresh token");
             }

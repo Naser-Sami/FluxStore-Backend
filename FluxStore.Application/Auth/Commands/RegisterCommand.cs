@@ -3,6 +3,12 @@ using MediatR;
 
 namespace FluxStore.Application.Auth.Commands
 {
-    public record RegisterCommand(RegisterRequest Request) : IRequest<AuthResponse>;
+    public class RegisterCommand : IRequest<AuthResponse>
+    {
+        public required string Username { get; set; }
+        public required string Email { get; set; }
+        public required string Password { get; set; }
+        public required string ConfirmPassword { get; set; }
+    }
 }
 

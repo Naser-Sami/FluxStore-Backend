@@ -11,7 +11,15 @@ namespace FluxStore.Application.Auth.Handlers
         public RegisterCommandHandler(IAuthService authService) => _authService = authService;
 
         public Task<AuthResponse> Handle(RegisterCommand request, CancellationToken cancellationToken)
-            => _authService.RegisterAsync(request.Request);
+        {
+            return _authService.RegisterAsync(new RegisterRequest
+            {
+                Username = request.Username,
+                Email = request.Email,
+                Password = request.Password,
+                ConfirmPassword = request.ConfirmPassword
+            });
+        }
     }
 }
 

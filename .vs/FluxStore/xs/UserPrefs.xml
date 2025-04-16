@@ -1,26 +1,19 @@
-﻿<Properties StartupConfiguration="{AEA81E27-68A3-43C4-83B3-767FBACCE9EE}|https">
+﻿<Properties StartupConfiguration="{AEA81E27-68A3-43C4-83B3-767FBACCE9EE}|https" GitUserInfo="UsingGIT">
   <MonoDevelop.Ide.ItemProperties.FluxStore.API PreferredExecutionTarget="/System/Volumes/Preboot/Cryptexes/App/System/Applications/Safari.app" />
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore>
-      <Breakpoint file="/Users/naserebedo/Developer/__Mobile__/_FluxStore_/Backend/FluxStore/FluxStore.Infrastructure/Services/AuthService.cs" relfile="FluxStore.Infrastructure/Services/AuthService.cs" line="25" column="1" />
       <Breakpoint file="/Users/naserebedo/Developer/__Mobile__/_FluxStore_/Backend/FluxStore/FluxStore.Application/Auth/Handlers/ResetPasswordCommandHandler.cs" relfile="FluxStore.Application/Auth/Handlers/ResetPasswordCommandHandler.cs" line="28" column="1" />
+      <Breakpoint file="/Users/naserebedo/Developer/__Mobile__/_FluxStore_/Backend/FluxStore/FluxStore.Infrastructure/Services/AuthService.cs" relfile="FluxStore.Infrastructure/Services/AuthService.cs" line="26" column="1" />
+      <Breakpoint file="/Users/naserebedo/Developer/__Mobile__/_FluxStore_/Backend/FluxStore/FluxStore.Infrastructure/Services/TokenService.cs" relfile="FluxStore.Infrastructure/Services/TokenService.cs" line="103" column="1" />
     </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="FluxStore.Application/Category/Handlers/UpdateCategoryCommandHandler.cs">
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workbench ActiveDocument="FluxStore.Infrastructure/Services/TokenService.cs">
     <Files>
-      <File FileName="FluxStore.API/Controllers/CategoryController.cs" Line="36" Column="10" />
-      <File FileName="FluxStore.Application/Products/Interfaces/IProductRepository.cs" Line="15" Column="1" />
-      <File FileName="FluxStore.Application/Category/Commands/CreateCategoryCommand.cs" Line="12" Column="2" />
-      <File FileName="FluxStore.Application/Category/Handlers/CreateCategoryCommandHandler.cs" Line="29" Column="65" />
-      <File FileName="FluxStore.Application/Category/Handlers/DeleteCategoryCommandHandler.cs" Line="24" Column="65" />
-      <File FileName="FluxStore.Application/Category/Commands/DeleteCategoryCommand.cs" Line="13" Column="10" />
-      <File FileName="FluxStore.Application/Category/Handlers/GetAllCategoriesQueryHandler.cs" Line="1" Column="1" />
-      <File FileName="FluxStore.Application/Category/Handlers/GetCategoryByIdQueryHandler.cs" Line="1" Column="1" />
-      <File FileName="FluxStore.Application/Category/Handlers/UpdateCategoryCommandHandler.cs" Line="29" Column="65" />
-      <File FileName="FluxStore.Application/Category/Commands/UpdateCategoryCommand.cs" Line="16" Column="1" />
+      <File FileName="FluxStore.Application/Auth/Handlers/ResetPasswordCommandHandler.cs" Line="36" Column="1" />
+      <File FileName="FluxStore.Infrastructure/Services/TokenService.cs" Line="112" Column="26" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -29,32 +22,25 @@
             <Node name="FluxStore.API">
               <Node name="Controllers" expanded="True" />
             </Node>
-            <Node name="FluxStore.Application">
-              <Node name="Category">
+            <Node name="FluxStore.Application" expanded="True">
+              <Node name="Auth" expanded="True">
+                <Node name="Commands" expanded="True" />
                 <Node name="DTOs" expanded="True" />
-                <Node name="Handlers">
-                  <Node name="UpdateCategoryCommandHandler.cs" selected="True" />
-                </Node>
+                <Node name="Handlers" expanded="True" />
                 <Node name="Interfaces" expanded="True" />
-                <Node name="Queries" expanded="True" />
               </Node>
-              <Node name="Profile" expanded="True" />
+              <Node name="Interfaces" expanded="True" />
             </Node>
-            <Node name="FluxStore.Domain">
+            <Node name="FluxStore.Domain" expanded="True">
               <Node name="Common" expanded="True" />
               <Node name="Entities" expanded="True" />
             </Node>
             <Node name="FluxStore.Infrastructure">
-              <Node name="Persistence" expanded="True">
-                <Node name="Configuration" expanded="True" />
-              </Node>
+              <Node name="Persistence" expanded="True" />
               <Node name="Repositories" expanded="True" />
-              <Node name="Services" expanded="True" />
-            </Node>
-            <Node name="FluxStore.Shared">
-              <Node name="Exceptions" expanded="True" />
-              <Node name="Responses" expanded="True" />
-              <Node name="Settings" expanded="True" />
+              <Node name="Services" expanded="True">
+                <Node name="TokenService.cs" selected="True" />
+              </Node>
             </Node>
           </Node>
         </State>

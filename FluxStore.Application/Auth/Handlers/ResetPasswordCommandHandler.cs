@@ -33,7 +33,7 @@ namespace FluxStore.Application.Auth.Commands.ResetPassword
             if (user == null)
                 return Result.Failure<string>("User not found");
 
-            var isValid = _tokenService.ValidatePasswordResetToken(user, request.Token); // we'll handle this
+            var isValid = await _tokenService.ValidatePasswordResetTokenAsync(user, request.Token); // we'll handle this
             if (!isValid)
                 return Result.Failure<string>("Invalid or expired reset token");
 

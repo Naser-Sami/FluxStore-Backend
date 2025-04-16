@@ -25,7 +25,7 @@ namespace FluxStore.Application.Auth.Commands.ForgotPassword
                 return Result.Failure<string>("User not found");
 
             var token = Guid.NewGuid().ToString(); // Your reset token
-            _tokenService.StorePasswordResetToken(user.Email, token, TimeSpan.FromHours(1)); // Store for 1 hour
+            await _tokenService.StorePasswordResetTokenAsync(user.Email, token, TimeSpan.FromHours(1)); // Store for 1 hour
 
             // TODO: Send email to user.Email with the token
 

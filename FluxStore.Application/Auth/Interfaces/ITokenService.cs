@@ -9,8 +9,8 @@ namespace FluxStore.Application.Common.Interfaces
         string GenerateRefreshToken(UserEntity user);
         ClaimsPrincipal? GetPrincipalFromExpiredToken(string token);
         bool ValidateRefreshToken(UserEntity user, string refreshToken);
-        bool ValidatePasswordResetToken(UserEntity user, string token);
-        void StorePasswordResetToken(string email, string token, TimeSpan validFor);
+        Task<bool> ValidatePasswordResetTokenAsync(UserEntity user, string token);
+        Task StorePasswordResetTokenAsync(string email, string token, TimeSpan validFor);
     }
 }
 
