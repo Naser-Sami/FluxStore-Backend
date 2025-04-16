@@ -24,9 +24,11 @@ namespace FluxStore.Application.User.Handlers
             user.FirstName = request.FirstName;
             user.LastName = request.LastName;
             user.Gender = request.Gender;
-            user.PhoneNumber = request.Phone;
+            user.Email = request.Email;
+            user.PhoneNumber = request.PhoneNumber;
             user.ImageUrl = request.ImageUrl;
             user.Address = request.Address;
+            user.UpdatedAt = DateTime.UtcNow;
 
             await _userRepository.UpdateAsync(user);
 

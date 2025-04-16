@@ -27,6 +27,7 @@ public static class DependencyInjection
         services.AddHttpContextAccessor();
         services.AddScoped<ICategoryRepository, CategoryRepository>();
         services.AddScoped<IProductRepository, ProductRepository>();
+        services.AddScoped<IFileService, FileService>();
         services.AddScoped<IApplicationDbContext>(provider => provider.GetService<AppDbContext>()!);
 
         return services;

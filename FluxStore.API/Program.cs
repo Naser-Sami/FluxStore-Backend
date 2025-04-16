@@ -8,6 +8,7 @@ using MediatR;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.StaticFiles;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.FileProviders;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
 
@@ -93,15 +94,34 @@ using (var scope = app.Services.CreateScope())
     dbContext.Database.Migrate();
 }
 
-// 👉 6. Static files setup (e.g., iOS support)
+// 👉 6. Static files setup (e.g., iOS support for .apple-app-site-association)
 var provider = new FileExtensionContentTypeProvider();
 provider.Mappings[".apple-app-site-association"] = "application/json";
+
+// ✅ Serve files from wwwroot (root level)
+app.UseStaticFiles(); // For wwwroot
+
+// ✅ Serve files from /wwwroot/uploads and make them accessible via /uploads
+app.UseStaticFiles(new StaticFileOptions
+{
+    FileProvider = new PhysicalFileProvider(
+        Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "uploads")),
+    RequestPath = "/uploads"
+});
+
+// ✅ Serve .apple-app-site-association file
 app.UseStaticFiles(new StaticFileOptions
 {
     ContentTypeProvider = provider,
-    ServeUnknownFileTypes = true,
-    DefaultContentType = "application/json"
+    ServeUnknownFileTypes = false // ⚠️ Better to avoid serving unknown types unless required
 });
+
+//app.UseStaticFiles(new StaticFileOptions
+//{
+//    ContentTypeProvider = provider,
+//    ServeUnknownFileTypes = true,
+//    DefaultContentType = "application/json"
+//});
 
 // 👉 7. Middleware
 if (app.Environment.IsDevelopment())

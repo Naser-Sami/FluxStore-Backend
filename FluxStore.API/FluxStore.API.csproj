@@ -35,6 +35,7 @@
     <Folder Include="wwwroot\" />
     <Folder Include="wwwroot\.well-known\" />
     <Folder Include="Middlewares\" />
+    <Folder Include="wwwroot\uploads\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="wwwroot\.well-known\apple-app-site-association.json" />
@@ -45,5 +46,6 @@
     <Content Remove="wwwroot\.well-known\apple-app-site-association.json" />
     <Content Remove="wwwroot\.well-known\assetlinks.json" />
     <Content Remove="wwwroot\.well-known\" />
+    <Content Remove="wwwroot\uploads\" />
   </ItemGroup>
 </Project>

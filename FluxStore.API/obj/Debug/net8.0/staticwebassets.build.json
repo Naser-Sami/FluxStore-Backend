@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "gFk7Sow5peWLj6Rb99GvDddIdMm2QeEycZIpVoQJSZs=",
+  "Hash": "R4vPs8MNydPAMMSadz0VDk6ftcg/dmmbuB+Y+hIXqv0=",
   "Source": "FluxStore.API",
   "BasePath": "_content/FluxStore.API",
   "Mode": "Default",
@@ -15,6 +15,317 @@
       "Pattern": "**"
     }
   ],
-  "Assets": [],
-  "Endpoints": []
+  "Assets": [
+    {
+      "Identity": "/Users/naserebedo/Developer/__Mobile__/_FluxStore_/Backend/FluxStore/FluxStore.API/wwwroot/uploads/301253bd-2dd7-49cc-8f7a-a1cb83fe4ee6.jpg",
+      "SourceId": "FluxStore.API",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/naserebedo/Developer/__Mobile__/_FluxStore_/Backend/FluxStore/FluxStore.API/wwwroot/",
+      "BasePath": "_content/FluxStore.API",
+      "RelativePath": "uploads/301253bd-2dd7-49cc-8f7a-a1cb83fe4ee6#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "o7jvkucowm",
+      "Integrity": "BP/4+CCu6osfBnU5fBW0xAtSRd8zArNnkhLMfFQ+6VE=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/uploads/301253bd-2dd7-49cc-8f7a-a1cb83fe4ee6.jpg"
+    },
+    {
+      "Identity": "/Users/naserebedo/Developer/__Mobile__/_FluxStore_/Backend/FluxStore/FluxStore.API/wwwroot/uploads/473154c7-ecde-4610-ac0b-5d4137bc3ed8.jpg",
+      "SourceId": "FluxStore.API",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/naserebedo/Developer/__Mobile__/_FluxStore_/Backend/FluxStore/FluxStore.API/wwwroot/",
+      "BasePath": "_content/FluxStore.API",
+      "RelativePath": "uploads/473154c7-ecde-4610-ac0b-5d4137bc3ed8#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "o7jvkucowm",
+      "Integrity": "BP/4+CCu6osfBnU5fBW0xAtSRd8zArNnkhLMfFQ+6VE=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/uploads/473154c7-ecde-4610-ac0b-5d4137bc3ed8.jpg"
+    },
+    {
+      "Identity": "/Users/naserebedo/Developer/__Mobile__/_FluxStore_/Backend/FluxStore/FluxStore.API/wwwroot/uploads/d8f986aa-5fc9-40aa-869b-6933ff15b412.jpg",
+      "SourceId": "FluxStore.API",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/naserebedo/Developer/__Mobile__/_FluxStore_/Backend/FluxStore/FluxStore.API/wwwroot/",
+      "BasePath": "_content/FluxStore.API",
+      "RelativePath": "uploads/d8f986aa-5fc9-40aa-869b-6933ff15b412#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "nkrge4rt34",
+      "Integrity": "lz3ki0uHV3QVrWrUyIOFvWfEB6EeCBjOQMxh11dWUQw=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/uploads/d8f986aa-5fc9-40aa-869b-6933ff15b412.jpg"
+    }
+  ],
+  "Endpoints": [
+    {
+      "Route": "uploads/301253bd-2dd7-49cc-8f7a-a1cb83fe4ee6.jpg",
+      "AssetFile": "/Users/naserebedo/Developer/__Mobile__/_FluxStore_/Backend/FluxStore/FluxStore.API/wwwroot/uploads/301253bd-2dd7-49cc-8f7a-a1cb83fe4ee6.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "841885"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"BP/4+CCu6osfBnU5fBW0xAtSRd8zArNnkhLMfFQ+6VE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 16 Apr 2025 12:34:26 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-BP/4+CCu6osfBnU5fBW0xAtSRd8zArNnkhLMfFQ+6VE="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/301253bd-2dd7-49cc-8f7a-a1cb83fe4ee6.o7jvkucowm.jpg",
+      "AssetFile": "/Users/naserebedo/Developer/__Mobile__/_FluxStore_/Backend/FluxStore/FluxStore.API/wwwroot/uploads/301253bd-2dd7-49cc-8f7a-a1cb83fe4ee6.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "841885"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"BP/4+CCu6osfBnU5fBW0xAtSRd8zArNnkhLMfFQ+6VE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 16 Apr 2025 12:34:26 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "o7jvkucowm"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/301253bd-2dd7-49cc-8f7a-a1cb83fe4ee6.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-BP/4+CCu6osfBnU5fBW0xAtSRd8zArNnkhLMfFQ+6VE="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/473154c7-ecde-4610-ac0b-5d4137bc3ed8.jpg",
+      "AssetFile": "/Users/naserebedo/Developer/__Mobile__/_FluxStore_/Backend/FluxStore/FluxStore.API/wwwroot/uploads/473154c7-ecde-4610-ac0b-5d4137bc3ed8.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "841885"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"BP/4+CCu6osfBnU5fBW0xAtSRd8zArNnkhLMfFQ+6VE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 16 Apr 2025 12:34:40 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-BP/4+CCu6osfBnU5fBW0xAtSRd8zArNnkhLMfFQ+6VE="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/473154c7-ecde-4610-ac0b-5d4137bc3ed8.o7jvkucowm.jpg",
+      "AssetFile": "/Users/naserebedo/Developer/__Mobile__/_FluxStore_/Backend/FluxStore/FluxStore.API/wwwroot/uploads/473154c7-ecde-4610-ac0b-5d4137bc3ed8.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "841885"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"BP/4+CCu6osfBnU5fBW0xAtSRd8zArNnkhLMfFQ+6VE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 16 Apr 2025 12:34:40 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "o7jvkucowm"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/473154c7-ecde-4610-ac0b-5d4137bc3ed8.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-BP/4+CCu6osfBnU5fBW0xAtSRd8zArNnkhLMfFQ+6VE="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/d8f986aa-5fc9-40aa-869b-6933ff15b412.jpg",
+      "AssetFile": "/Users/naserebedo/Developer/__Mobile__/_FluxStore_/Backend/FluxStore/FluxStore.API/wwwroot/uploads/d8f986aa-5fc9-40aa-869b-6933ff15b412.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3967270"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"lz3ki0uHV3QVrWrUyIOFvWfEB6EeCBjOQMxh11dWUQw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 16 Apr 2025 12:34:38 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-lz3ki0uHV3QVrWrUyIOFvWfEB6EeCBjOQMxh11dWUQw="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/d8f986aa-5fc9-40aa-869b-6933ff15b412.nkrge4rt34.jpg",
+      "AssetFile": "/Users/naserebedo/Developer/__Mobile__/_FluxStore_/Backend/FluxStore/FluxStore.API/wwwroot/uploads/d8f986aa-5fc9-40aa-869b-6933ff15b412.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3967270"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"lz3ki0uHV3QVrWrUyIOFvWfEB6EeCBjOQMxh11dWUQw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 16 Apr 2025 12:34:38 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "nkrge4rt34"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/d8f986aa-5fc9-40aa-869b-6933ff15b412.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-lz3ki0uHV3QVrWrUyIOFvWfEB6EeCBjOQMxh11dWUQw="
+        }
+      ]
+    }
+  ]
 }

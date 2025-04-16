@@ -30,7 +30,7 @@ namespace FluxStore.Application.User.Handlers
                 LastName = user.LastName ?? "",
                 Email = user.Email,
                 Gender = user.Gender,
-                PhoneNubmer = user.PhoneNumber ?? "",
+                PhoneNumber = user.PhoneNumber ?? "",
                 ImageUrl = user.ImageUrl,
                 Address = user.Address
             });
