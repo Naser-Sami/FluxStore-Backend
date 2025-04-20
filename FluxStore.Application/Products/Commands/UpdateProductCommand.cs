@@ -12,6 +12,10 @@ namespace FluxStore.Application.Commands.Products.Commands
         public string? ImageUrl { get; set; }
         public int Stock { get; set; }
         public Guid CategoryId { get; set; }
+
+        public List<string> AdditionalImages { get; set; } = new();
+        public List<string> AvailableColors { get; set; } = new();
+        public List<string> AvailableSizes { get; set; } = new();
     }
 }
 

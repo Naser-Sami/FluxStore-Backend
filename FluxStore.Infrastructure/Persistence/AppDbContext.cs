@@ -10,7 +10,6 @@ namespace FluxStore.Infrastructure.Persistence
 
         public DbSet<UserEntity> Users => Set<UserEntity>();
         public DbSet<Role> Roles => Set<Role>();
-
         public DbSet<Product> Products { get; set; }
         public DbSet<Category> Categories { get; set; }
         public DbSet<ProductRating> Ratings { get; set; }

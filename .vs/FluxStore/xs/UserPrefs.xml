@@ -4,43 +4,63 @@
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore>
-      <Breakpoint file="/Users/naserebedo/Developer/__Mobile__/_FluxStore_/Backend/FluxStore/FluxStore.Application/Auth/Handlers/ResetPasswordCommandHandler.cs" relfile="FluxStore.Application/Auth/Handlers/ResetPasswordCommandHandler.cs" line="28" column="1" />
-      <Breakpoint file="/Users/naserebedo/Developer/__Mobile__/_FluxStore_/Backend/FluxStore/FluxStore.Infrastructure/Services/AuthService.cs" relfile="FluxStore.Infrastructure/Services/AuthService.cs" line="26" column="1" />
-      <Breakpoint file="/Users/naserebedo/Developer/__Mobile__/_FluxStore_/Backend/FluxStore/FluxStore.Infrastructure/Services/TokenService.cs" relfile="FluxStore.Infrastructure/Services/TokenService.cs" line="103" column="1" />
+      <Breakpoint file="/Users/naserebedo/Developer/__Mobile__/_FluxStore_/Backend/FluxStore/FluxStore.Application/User/Handlers/UpdateUserProfileCommandHandler.cs" relfile="FluxStore.Application/User/Handlers/UpdateUserProfileCommandHandler.cs" line="18" column="1" />
     </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.Workbench ActiveDocument="FluxStore.Infrastructure/Services/TokenService.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="FluxStore.Application/Products/Handlers/UpdateProductCommandHandler.cs">
     <Files>
-      <File FileName="FluxStore.Application/Auth/Handlers/ResetPasswordCommandHandler.cs" Line="36" Column="1" />
-      <File FileName="FluxStore.Infrastructure/Services/TokenService.cs" Line="112" Column="26" />
+      <File FileName="FluxStore.API/Controllers/ProductsController.cs" Line="45" Column="57" />
+      <File FileName="FluxStore.Application/Products/Commands/UpdateProductCommand.cs" Line="6" Column="15" />
+      <File FileName="FluxStore.Application/Products/Handlers/UpdateProductCommandHandler.cs" Line="26" Column="45" />
+      <File FileName="FluxStore.Application/Products/Handlers/GetProductDetailsQueryHandler.cs" Line="52" Column="26" />
+      <File FileName="FluxStore.Domain/Entities/Product.cs" Line="24" Column="2" />
+      <File FileName="FluxStore.Application/Products/Queries/GetProductDetailsQuery.cs" Line="6" Column="77" />
+      <File FileName="FluxStore.Application/Products/Handlers/GetProductByIdQueryHandler.cs" Line="40" Column="6" />
+      <File FileName="FluxStore.Application/Products/Handlers/CreateProductCommandHandler.cs" Line="19" Column="13" />
+      <File FileName="FluxStore.Domain/Entities/Category.cs" Line="3" Column="18" />
+      <File FileName="FluxStore.Application/Products/Handlers/DeleteProductCommandHandler.cs" Line="23" Column="2" />
+      <File FileName="FluxStore.Application/Products/Queries/GetProductByIdQuery.cs" Line="18" Column="1" />
+      <File FileName="FluxStore.Application/Products/Commands/AddProductReviewCommand.cs" Line="15" Column="1" />
+      <File FileName="FluxStore.Application/Products/Handlers/AddProductReviewCommandHandler.cs" Line="63" Column="10" />
+      <File FileName="FluxStore.Application/Products/Handlers/GetAllProductsQueryHandler.cs" Line="1" Column="1" />
+      <File FileName="FluxStore.Application/User/Handlers/GetUserProfileQueryHandler.cs" Line="17" Column="10" />
+      <File FileName="FluxStore.Application/Products/DTOs/ProductReviewDto.cs" Line="3" Column="18" />
+      <File FileName="FluxStore.Domain/Entities/ProductReview.cs" Line="3" Column="15" />
+      <File FileName="FluxStore.Infrastructure/Persistence/AppDbContext.cs" Line="16" Column="39" />
+      <File FileName="FluxStore.Application/Interfaces/IApplicationDbContext.cs" Line="12" Column="32" />
+      <File FileName="FluxStore.Application/Products/DTOs/ProductDetailsDto.cs" Line="21" Column="29" />
+      <File FileName="FluxStore.API/Program.cs" Line="151" Column="1" />
+      <File FileName="FluxStore.Domain/Entities/ProductRating.cs" Line="3" Column="15" />
+      <File FileName="FluxStore.Application/Products/Commands/DeleteProductCommand.cs" Line="1" Column="1" />
+      <File FileName="FluxStore.Application/Products/Commands/CreateProductCommand.cs" Line="14" Column="41" />
+      <File FileName="FluxStore.Application/Products/Queries/GetAllProductsQuery.cs" Line="10" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="FluxStore" expanded="True">
             <Node name="FluxStore.API">
-              <Node name="Controllers" expanded="True" />
+              <Node name="wwwroot" expanded="True">
+                <Node name="uploads" expanded="True" />
+              </Node>
+              <Node name="appsettings.json" expanded="True" />
             </Node>
-            <Node name="FluxStore.Application" expanded="True">
+            <Node name="FluxStore.Application">
               <Node name="Auth" expanded="True">
                 <Node name="Commands" expanded="True" />
-                <Node name="DTOs" expanded="True" />
-                <Node name="Handlers" expanded="True" />
-                <Node name="Interfaces" expanded="True" />
               </Node>
-              <Node name="Interfaces" expanded="True" />
-            </Node>
-            <Node name="FluxStore.Domain" expanded="True">
               <Node name="Common" expanded="True" />
-              <Node name="Entities" expanded="True" />
+              <Node name="Interfaces" expanded="True" />
+              <Node name="Products">
+                <Node name="Handlers">
+                  <Node name="UpdateProductCommandHandler.cs" selected="True" />
+                </Node>
+              </Node>
             </Node>
             <Node name="FluxStore.Infrastructure">
               <Node name="Persistence" expanded="True" />
               <Node name="Repositories" expanded="True" />
-              <Node name="Services" expanded="True">
-                <Node name="TokenService.cs" selected="True" />
-              </Node>
             </Node>
           </Node>
         </State>

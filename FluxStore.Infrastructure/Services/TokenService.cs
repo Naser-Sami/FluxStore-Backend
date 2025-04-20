@@ -15,8 +15,6 @@ namespace FluxStore.Infrastructure.Services
 {
     public class TokenService : ITokenService
     {
-        private readonly Dictionary<string, (string Email, DateTime Expiry)> _resetTokens = new();
-
         private readonly IOptions<JwtSettings> _jwtSettings;
         private readonly IConfiguration _config;
         private readonly AppDbContext _context;

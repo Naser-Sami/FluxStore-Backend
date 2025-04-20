@@ -1,8 +1,6 @@
-﻿using FluxStore.Application.Commands.Products.Commands;
-using FluxStore.Application.Common;
+﻿using FluxStore.Application.Common;
 using FluxStore.Application.Interfaces;
 using FluxStore.Application.Products.Mappers;
-using FluxStore.Domain.Entities;
 using MediatR;
 
 namespace FluxStore.Application.Products.Handlers
@@ -27,13 +25,15 @@ namespace FluxStore.Application.Products.Handlers
                 ImageUrl = request.ImageUrl,
                 Stock = request.Stock,
                 CategoryId = request.CategoryId,
-                
+                AdditionalImages = request.AdditionalImages,
+                AvailableColors = request.AvailableColors,
+                AvailableSizes = request.AvailableSizes,
+                CreatedAt = DateTime.UtcNow
             };
 
             await _productRepository.CreateAsync(product);
 
-            var productDto = product.ToDto();
-            return Result.Success(productDto);
+            return Result.Success(product.ToDto());
         }
     }
 }

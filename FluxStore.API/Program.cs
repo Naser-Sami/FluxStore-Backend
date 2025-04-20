@@ -145,6 +145,12 @@ dotnet ef migrations add <migration-name> --startup-project ../FluxStore.API
 dotnet ef database update --startup-project ../FluxStore.API
 dotnet ef migrations remove --startup-project ../FluxStore.API
 
+
+
+dotnet ef migrations remove ProductsDetails --startup-project ../FluxStore.API
+
+dotnet ef migrations add InitialDB --startup-project ../FluxStore.API
+
+dotnet ef migrations add ProductReviewTable --startup-project ../FluxStore.API
+
 */
-
-

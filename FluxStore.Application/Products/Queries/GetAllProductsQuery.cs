@@ -1,5 +1,4 @@
 ﻿using FluxStore.Application.Common;
-using FluxStore.Application.DTOs.Category;
 using FluxStore.Application.DTOs.Product;
 using MediatR;
 

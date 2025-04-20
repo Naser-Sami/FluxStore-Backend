@@ -18,7 +18,7 @@ namespace FluxStore.Application.User.Handlers
 
         public async Task<Result<UserProfileDto>> Handle(GetUserProfileQuery request, CancellationToken cancellationToken)
         {
-            var user = await _userRepository.GetCurrentUserAsync(); // We’ll define this shortly
+            var user = await _userRepository.GetCurrentUserAsync();
 
             if (user is null)
                 return Result.Failure<UserProfileDto>("User not found");

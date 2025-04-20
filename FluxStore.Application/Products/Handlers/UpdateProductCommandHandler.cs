@@ -1,7 +1,6 @@
 ﻿using FluxStore.Application.Commands.Products.Commands;
 using FluxStore.Application.Common;
 using FluxStore.Application.Interfaces;
-using FluxStore.Domain.Entities;
 using MediatR;
 
 namespace FluxStore.Application.Products.Handlers
@@ -19,13 +18,17 @@ namespace FluxStore.Application.Products.Handlers
         {
             var product = new Product
             {
-                Id = request.Id,
+                Id = Guid.NewGuid(),
                 Name = request.Name,
                 Description = request.Description,
                 Price = request.Price,
                 ImageUrl = request.ImageUrl,
                 Stock = request.Stock,
-                CategoryId = request.CategoryId
+                CategoryId = request.CategoryId,
+                AdditionalImages = request.AdditionalImages,
+                AvailableColors = request.AvailableColors,
+                AvailableSizes = request.AvailableSizes,
+                CreatedAt = DateTime.UtcNow
             };
 
             await _productRepository.UpdateAsync(product);

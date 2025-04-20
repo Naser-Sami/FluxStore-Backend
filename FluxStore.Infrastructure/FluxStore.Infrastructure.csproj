@@ -27,11 +27,13 @@
     <None Remove="Persistence\Configuration\" />
     <None Remove="Repositories\" />
     <None Remove="Services\" />
+    <None Remove="Migrations\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Persistence\" />
     <Folder Include="Persistence\Configuration\" />
     <Folder Include="Repositories\" />
     <Folder Include="Services\" />
+    <Folder Include="Migrations\" />
   </ItemGroup>
 </Project>

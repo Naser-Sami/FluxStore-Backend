@@ -1,5 +1,6 @@
 ﻿using FluxStore.Application.Commands.Products.Commands;
 using FluxStore.Application.Commands.Products.Queries;
+using FluxStore.Application.Products.Commands;
 using FluxStore.Application.Products.Queries;
 using MediatR;
 using Microsoft.AspNetCore.Authorization;
@@ -62,6 +63,16 @@ namespace FluxStore.API.Controllers
         {
             var result = await _mediator.Send(new GetProductDetailsQuery(id));
             return result.IsSuccess ? Ok(result.Data) : NotFound(result.Message);
+        }
+
+        [HttpPost("add-review")]
+        public async Task<IActionResult> AddReview([FromBody] AddProductReviewCommand command)
+        {
+            var result = await _mediator.Send(command);
+            if (!result.IsSuccess)
+                return BadRequest(new { message = result.Message });
+
+            return Ok("Success");
         }
     }
 }

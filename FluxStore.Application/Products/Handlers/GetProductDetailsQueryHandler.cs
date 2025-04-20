@@ -40,6 +40,8 @@ namespace FluxStore.Application.Products.Handlers
                 Price = product.Price,
                 ImageUrl = product.ImageUrl ?? "",
                 Stock = product.Stock,
+                CategoryId = product.CategoryId,
+                CreatedAt = product.CreatedAt,
                 CategoryName = product.Category.Name,
                 AdditionalImages = product.AdditionalImages,
                 AvailableColors = product.AvailableColors,
@@ -48,9 +50,11 @@ namespace FluxStore.Application.Products.Handlers
                 Reviews = product.Reviews.Select(r => new ProductReviewDto
                 {
                     ReviewerName = r.ReviewerName,
-                    Text = r.Text,
+                    ReviewerImage = r.ReviewerImage,
+                    Text = r.Description,
                     Date = r.Date,
-                    ImageUrl = r.ImageUrl
+                    Rating = r.Rating,
+                    Images = r.Images
                 }).ToList()
             };
 
