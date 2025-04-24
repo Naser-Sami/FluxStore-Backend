@@ -49,7 +49,7 @@ namespace FluxStore.API.Controllers
 
                 var imageUrl = await _fileService.UploadImageAsync(image);
 
-                // Optional: save to current user
+                // save to current user
                 var user = await _userRepository.GetCurrentUserAsync();
                 if (user == null)
                     return NotFound("User not found");

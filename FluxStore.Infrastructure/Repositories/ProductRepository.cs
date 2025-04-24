@@ -1,5 +1,4 @@
 ﻿using FluxStore.Application.Interfaces;
-using FluxStore.Domain.Entities;
 using FluxStore.Infrastructure.Persistence;
 using Microsoft.EntityFrameworkCore;
 

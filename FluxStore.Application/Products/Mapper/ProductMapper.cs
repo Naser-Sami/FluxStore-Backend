@@ -19,5 +19,20 @@ namespace FluxStore.Application.Products.Mappers
                 CreatedAt = product.CreatedAt
             };
         }
+
+        public static Product ToEntity(this ProductDto dto)
+        {
+            return new Product
+            {
+                Id = dto.Id,
+                Name = dto.Name,
+                Description = dto.Description ?? "",
+                Price = dto.Price,
+                Stock = dto.Stock,
+                ImageUrl = dto.ImageUrl ?? "",
+                CategoryId = dto.CategoryId,
+                CreatedAt = dto.CreatedAt
+            };
+        }
     }
 }
