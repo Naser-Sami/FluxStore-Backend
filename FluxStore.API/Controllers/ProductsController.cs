@@ -1,6 +1,5 @@
 ﻿using FluxStore.Application.Commands.Products.Commands;
 using FluxStore.Application.Commands.Products.Queries;
-using FluxStore.Application.Interfaces;
 using FluxStore.Application.Products.Commands;
 using FluxStore.Application.Products.Queries;
 using MediatR;
@@ -15,15 +14,10 @@ namespace FluxStore.API.Controllers
 	public class ProductsController : ControllerBase
 	{
 		private readonly IMediator _mediator;
-        private readonly IFileService _fileService;
-        private readonly IProductRepository _productRepository;
 
-        public ProductsController(IMediator mediator, IFileService fileService,
-            IProductRepository productRepository)
+        public ProductsController(IMediator mediator)
 		{
 			_mediator = mediator;
-			_fileService = fileService;
-			_productRepository = productRepository;
 		}
 
 		[HttpGet]
@@ -40,14 +34,15 @@ namespace FluxStore.API.Controllers
 			return result.IsSuccess ? Ok(result.Data) : NotFound(result.Message);
 		}
 
-		[HttpPost]
-		public async Task<IActionResult> Create(CreateProductCommand command)
-		{
-			var result = await _mediator.Send(command);
-			return result.IsSuccess ? Ok(result.Message) : BadRequest(result.Message); 
-		}
+        [HttpPost]
+        [Consumes("multipart/form-data")]
+        public async Task<IActionResult> Create([FromForm] CreateProductCommand command)
+        {
+            var result = await _mediator.Send(command);
+            return result.IsSuccess ? Ok(result.Data) : BadRequest(result.Message);
+        }
 
-		[HttpPut("{id:guid}")]
+        [HttpPut("{id:guid}")]
 		public async Task<IActionResult> Update(Guid id, UpdateProductCommand command)
 		{
             if (id != command.Id)
@@ -79,73 +74,6 @@ namespace FluxStore.API.Controllers
                 return BadRequest(new { message = result.Message });
 
             return Ok("Success");
-        }
-
-		[HttpPost("update-product-image")]
-		public async Task<IActionResult> ProductImage(IFormFile? image, Guid id)
-		{
-			try
-			{
-				if (image == null || image.Length == 0)
-					return BadRequest("Product image is required.");
-
-				var imageUrl = await _fileService.UploadImageAsync(image);
-
-				var product = await _productRepository.GetByIdAsync(id);
-                if (product == null)
-					return NotFound("Product not found.");
-
-				if (product == null)
-                    return NotFound("No data found.");
-
-                product.ImageUrl = imageUrl.Replace("api/", "");
-                await _productRepository.UpdateAsync(product);
-
-                return Ok(new { imageUrl });
-            }
-			catch (Exception e)
-			{
-				return BadRequest(new { error = e.Message });
-			}
-		}
-
-        [HttpPost("update-product-details-images")]
-        public async Task<IActionResult> ProductDetailsImages(List<IFormFile>? images, Guid id)
-        {
-            try
-            {
-                List<string> imageUrl = new List<string>();
-
-                if (images == null || images.Count == 0)
-                    return BadRequest("Product image is required.");
-
-                var product = await _productRepository.GetByIdAsync(id);
-                if (product == null)
-                    return NotFound("Product not found.");
-
-                if (product == null)
-                    return NotFound("No data found.");
-
-                product.AdditionalImages.Clear();
-
-                foreach (var image in images)
-                {
-                    imageUrl.Add(await _fileService.UploadImageAsync(image));
-                }
-
-                foreach (var image in imageUrl)
-                {
-                    product.AdditionalImages.Add(image.Replace("api/", ""));
-                }
-
-                await _productRepository.UpdateAsync(product);
-
-                return Ok("Products Images added succesfully.");
-            }
-            catch (Exception e)
-            {
-                return BadRequest(new { error = e.Message });
-            }
         }
     }
 }

@@ -170,6 +170,7 @@
 /Users/naserebedo/Developer/__Mobile__/_FluxStore_/Backend/FluxStore/FluxStore.API/obj/Debug/net8.0/FluxStore.API.pdb
 /Users/naserebedo/Developer/__Mobile__/_FluxStore_/Backend/FluxStore/FluxStore.API/obj/Debug/net8.0/FluxStore.API.genruntimeconfig.cache
 /Users/naserebedo/Developer/__Mobile__/_FluxStore_/Backend/FluxStore/FluxStore.API/obj/Debug/net8.0/ref/FluxStore.API.dll
+/Users/naserebedo/Developer/__Mobile__/_FluxStore_/Backend/FluxStore/FluxStore.API/bin/Debug/net8.0/Swashbuckle.AspNetCore.Annotations.dll
 /Users/naserebedo/Developer/__Mobile__/_FluxStore_/Backend/FluxStore/FluxStore.API/bin/Debug/net8.0/FluxStore.API.staticwebassets.endpoints.json
 /Users/naserebedo/Developer/__Mobile__/_FluxStore_/Backend/FluxStore/FluxStore.API/obj/Debug/net8.0/staticwebassets.build.endpoints.json
 /Users/naserebedo/Developer/__Mobile__/_FluxStore_/Backend/FluxStore/FluxStore.API/obj/Debug/net8.0/staticwebassets/msbuild.FluxStore.API.Microsoft.AspNetCore.StaticWebAssetEndpoints.props

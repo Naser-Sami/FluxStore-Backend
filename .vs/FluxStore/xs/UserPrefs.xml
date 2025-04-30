@@ -1,23 +1,15 @@
 ﻿<Properties StartupConfiguration="{AEA81E27-68A3-43C4-83B3-767FBACCE9EE}|https" GitUserInfo="UsingGIT">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.Workbench ActiveDocument="FluxStore.API/Program.cs">
+  <MonoDevelop.Ide.ItemProperties.FluxStore.API PreferredExecutionTarget="/System/Volumes/Preboot/Cryptexes/App/System/Applications/Safari.app" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workbench ActiveDocument="FluxStore.Application/Products/Handlers/CreateProductCommandHandler.cs">
     <Files>
-      <File FileName="FluxStore.Infrastructure/Persistence/AppDbContext.cs" Line="20" Column="10" />
-      <File FileName="FluxStore.Infrastructure/DependencyInjection.cs" Line="31" Column="35" />
-      <File FileName="FluxStore.Infrastructure/Persistence/Configuration/UserConfiguration.cs" Line="18" Column="6" />
-      <File FileName="FluxStore.Infrastructure/Persistence/Configuration/ProductReviewConfiguration.cs" Line="29" Column="41" />
-      <File FileName="FluxStore.Domain/Entities/UserEntity.cs" Line="6" Column="3" />
-      <File FileName="FluxStore.API/Controllers/ProductsController.cs" Line="69" Column="64" />
-      <File FileName="FluxStore.Application/Products/Commands/AddProductReviewCommand.cs" Line="9" Column="28" />
-      <File FileName="FluxStore.Application/Products/Handlers/AddProductReviewCommandHandler.cs" Line="15" Column="57" />
-      <File FileName="FluxStore.Application/Products/Commands/CreateProductCommand.cs" Line="16" Column="21" />
-      <File FileName="FluxStore.Application/Products/Commands/DeleteProductCommand.cs" Line="15" Column="2" />
-      <File FileName="FluxStore.Application/Products/DTOs/ProductDto.cs" Line="15" Column="2" />
-      <File FileName="FluxStore.Application/Products/Handlers/CreateProductCommandHandler.cs" Line="10" Column="37" />
-      <File FileName="FluxStore.Application/Products/Queries/GetAllProductsQuery.cs" Line="7" Column="44" />
-      <File FileName="FluxStore.Application/Products/Interfaces/IProductRepository.cs" Line="7" Column="33" />
-      <File FileName="FluxStore.Infrastructure/Repositories/ProductRepository.cs" Line="2" Column="33" />
-      <File FileName="FluxStore.API/Program.cs" Line="1" Column="1" />
+      <File FileName="FluxStore.API/Controllers/ProductsController.cs" Line="43" Column="10" />
+      <File FileName="FluxStore.Application/Products/Handlers/CreateProductCommandHandler.cs" Line="36" Column="44" />
+      <File FileName="FluxStore.Infrastructure/Services/FileService.cs" Line="8" Column="3" />
+      <File FileName="FluxStore.Application/Products/Commands/CreateProductCommand.cs" Line="35" Column="2" />
+      <File FileName="FluxStore.Application/Products/DTOs/ProductDto.cs" Line="4" Column="6" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -25,44 +17,37 @@
           <Node name="FluxStore">
             <Node name="FluxStore.API">
               <Node name="Controllers" expanded="True" />
-              <Node name="Program.cs" selected="True" />
-            </Node>
-            <Node name="FluxStore.Application" expanded="True">
-              <Node name="Category" expanded="True">
-                <Node name="Interfaces" expanded="True" />
+              <Node name="wwwroot" expanded="True">
+                <Node name="uploads" expanded="True" />
               </Node>
-              <Node name="Interfaces" expanded="True" />
+            </Node>
+            <Node name="FluxStore.Application">
               <Node name="Products" expanded="True">
                 <Node name="Commands" expanded="True" />
                 <Node name="DTOs" expanded="True" />
-                <Node name="Handlers" expanded="True" />
+                <Node name="Handlers" expanded="True">
+                  <Node name="CreateProductCommandHandler.cs" selected="True" />
+                </Node>
                 <Node name="Interfaces" expanded="True" />
+                <Node name="Mapper" expanded="True" />
                 <Node name="Queries" expanded="True" />
               </Node>
-            </Node>
-            <Node name="FluxStore.Domain" expanded="True">
-              <Node name="Entities" expanded="True" />
-            </Node>
-            <Node name="FluxStore.Infrastructure">
-              <Node name="Migrations" expanded="True" />
-              <Node name="Persistence" expanded="True">
-                <Node name="Configuration" expanded="True" />
+              <Node name="User" expanded="True">
+                <Node name="Handlers" expanded="True" />
+                <Node name="Interfaces" expanded="True" />
               </Node>
             </Node>
-            <Node name="FluxStore.Shared" expanded="True">
-              <Node name="Responses" expanded="True" />
+            <Node name="FluxStore.Infrastructure" expanded="True">
+              <Node name="Services" expanded="True" />
             </Node>
           </Node>
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.ItemProperties.FluxStore.API PreferredExecutionTarget="/System/Volumes/Preboot/Cryptexes/App/System/Applications/Safari.app" />
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore>
-      <Breakpoint file="/Users/naserebedo/Developer/__Mobile__/_FluxStore_/Backend/FluxStore/FluxStore.Application/User/Handlers/UpdateUserProfileCommandHandler.cs" relfile="FluxStore.Application/User/Handlers/UpdateUserProfileCommandHandler.cs" line="18" column="1" />
+      <Breakpoint file="/Users/naserebedo/Developer/__Mobile__/_FluxStore_/Backend/FluxStore/FluxStore.Application/Products/Handlers/CreateProductCommandHandler.cs" relfile="FluxStore.Application/Products/Handlers/CreateProductCommandHandler.cs" line="24" column="1" />
     </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
 </Properties>

@@ -1,20 +1,27 @@
 ﻿using FluxStore.Application.Common;
+using FluxStore.Application.DTOs.Product;
 using FluxStore.Application.Interfaces;
 using FluxStore.Application.Products.Mappers;
 using MediatR;
 
 namespace FluxStore.Application.Products.Handlers
 {
-	public class CreateProductCommandHandler : IRequestHandler<CreateProductCommand, Result>
+	public class CreateProductCommandHandler :
+        IRequestHandler<CreateProductCommand, Result<ProductDto>>
     {
         private readonly IProductRepository _productRepository;
+        private readonly IFileService _fileService;
 
-        public CreateProductCommandHandler(IProductRepository productRepository)
+
+        public CreateProductCommandHandler(IProductRepository productRepository
+            ,IFileService fileService)
         {
             _productRepository = productRepository;
+            _fileService = fileService;
         }
 
-        public async Task<Result> Handle(CreateProductCommand request, CancellationToken cancellationToken)
+        public async Task<Result<ProductDto>> Handle(CreateProductCommand request,
+            CancellationToken cancellationToken)
         {
             var product = new Product
             {
@@ -22,18 +29,31 @@ namespace FluxStore.Application.Products.Handlers
                 Name = request.Name,
                 Description = request.Description,
                 Price = request.Price,
-                ImageUrl = request.ImageUrl,
                 Stock = request.Stock,
                 CategoryId = request.CategoryId,
-                AdditionalImages = request.AdditionalImages,
                 AvailableColors = request.AvailableColors,
                 AvailableSizes = request.AvailableSizes,
                 CreatedAt = DateTime.UtcNow
             };
 
+            if (request.ImageUrl != null)
+            {
+                var mainImageUrl = await _fileService.UploadImageAsync(request.ImageUrl);
+                product.ImageUrl = mainImageUrl.Replace("api/", "");
+            }
+
+            if (request.AdditionalImages != null && request.AdditionalImages.Any())
+            {
+                foreach (var image in request.AdditionalImages)
+                {
+                    var additionalImageUrl = await _fileService.UploadImageAsync(image);
+                    product.AdditionalImages.Add(additionalImageUrl.Replace("api/", ""));
+                }
+            }
+
             await _productRepository.CreateAsync(product);
 
-            return Result.Success(product.ToDto());
+            return Result<ProductDto>.Success(product.ToDto());
         }
     }
 }

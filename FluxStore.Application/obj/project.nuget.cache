@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "R94+1SbeCCM=",
+  "dgSpecHash": "9gzC9vsY5Bo=",
   "success": true,
   "projectFilePath": "/Users/naserebedo/Developer/__Mobile__/_FluxStore_/Backend/FluxStore/FluxStore.Application/FluxStore.Application.csproj",
   "expectedPackageFiles": [
@@ -49,7 +49,11 @@
     "/Users/naserebedo/.nuget/packages/microsoft.identitymodel.tokens/8.8.0/microsoft.identitymodel.tokens.8.8.0.nupkg.sha512",
     "/Users/naserebedo/.nuget/packages/microsoft.net.http.headers/2.3.0/microsoft.net.http.headers.2.3.0.nupkg.sha512",
     "/Users/naserebedo/.nuget/packages/microsoft.netcore.platforms/2.0.0/microsoft.netcore.platforms.2.0.0.nupkg.sha512",
+    "/Users/naserebedo/.nuget/packages/microsoft.openapi/1.6.23/microsoft.openapi.1.6.23.nupkg.sha512",
     "/Users/naserebedo/.nuget/packages/microsoft.win32.registry/4.5.0/microsoft.win32.registry.4.5.0.nupkg.sha512",
+    "/Users/naserebedo/.nuget/packages/swashbuckle.aspnetcore.annotations/8.1.1/swashbuckle.aspnetcore.annotations.8.1.1.nupkg.sha512",
+    "/Users/naserebedo/.nuget/packages/swashbuckle.aspnetcore.swagger/8.1.1/swashbuckle.aspnetcore.swagger.8.1.1.nupkg.sha512",
+    "/Users/naserebedo/.nuget/packages/swashbuckle.aspnetcore.swaggergen/8.1.1/swashbuckle.aspnetcore.swaggergen.8.1.1.nupkg.sha512",
     "/Users/naserebedo/.nuget/packages/system.buffers/4.6.0/system.buffers.4.6.0.nupkg.sha512",
     "/Users/naserebedo/.nuget/packages/system.identitymodel.tokens.jwt/8.8.0/system.identitymodel.tokens.jwt.8.8.0.nupkg.sha512",
     "/Users/naserebedo/.nuget/packages/system.security.accesscontrol/4.5.0/system.security.accesscontrol.4.5.0.nupkg.sha512",
