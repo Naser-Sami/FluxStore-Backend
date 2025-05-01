@@ -49,7 +49,7 @@ namespace FluxStore.API.Controllers
                 return BadRequest("Product ID mismatch");
 
             var result = await _mediator.Send(command);
-            return result.IsSuccess ? Ok(result.Message) : BadRequest(result.Message);
+            return result.IsSuccess ? Ok(result.Data) : BadRequest(result.Message);
         }
 
 		[HttpDelete("{id:guid}")]

@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("FluxStore.Shared")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+135eb7b6db5d775729a02735057feb6e253ac187")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+872e17efcd725247a700e11cf4fb3d44d0037f82")]
 [assembly: System.Reflection.AssemblyProductAttribute("FluxStore.Shared")]
 [assembly: System.Reflection.AssemblyTitleAttribute("FluxStore.Shared")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

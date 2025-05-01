@@ -1,20 +1,41 @@
 ﻿using FluxStore.Application.Common;
+using FluxStore.Application.DTOs.Product;
 using MediatR;
+using Microsoft.AspNetCore.Http;
+using Swashbuckle.AspNetCore.Annotations;
 
 namespace FluxStore.Application.Commands.Products.Commands
 {
-	public class UpdateProductCommand : IRequest<Result>
+	public class UpdateProductCommand : IRequest<Result<ProductDto>>
     {
+        [SwaggerSchema("Product ID")]
         public Guid Id { get; set; }
+
+        [SwaggerSchema("Product name")]
         public string Name { get; set; } = string.Empty;
+
+        [SwaggerSchema("Description")]
         public string? Description { get; set; }
+
+        [SwaggerSchema("Price")]
         public decimal Price { get; set; }
-        public string? ImageUrl { get; set; }
+
+        [SwaggerSchema("Main image")]
+        public IFormFile? ImageUrl { get; set; }
+
+        [SwaggerSchema("Stock")]
         public int Stock { get; set; }
+
+        [SwaggerSchema("Category ID")]
         public Guid CategoryId { get; set; }
 
-        public List<string> AdditionalImages { get; set; } = new();
+        [SwaggerSchema("Additional images")]
+        public List<IFormFile>? AdditionalImages { get; set; } = new();
+
+        [SwaggerSchema("Available colors")]
         public List<string> AvailableColors { get; set; } = new();
+
+        [SwaggerSchema("Available sizes")]
         public List<string> AvailableSizes { get; set; } = new();
     }
 }
