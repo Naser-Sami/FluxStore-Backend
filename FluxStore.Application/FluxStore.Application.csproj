@@ -25,6 +25,12 @@
     <None Remove="Products\Mapper\" />
     <None Remove="Interfaces\" />
     <None Remove="Products\Helper\" />
+    <None Remove="Cart\" />
+    <None Remove="Cart\DTOs\" />
+    <None Remove="Cart\Interface\" />
+    <None Remove="Cart\Commands\" />
+    <None Remove="Cart\Handlers\" />
+    <None Remove="Cart\Queries\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Common\" />
@@ -37,5 +43,11 @@
     <Folder Include="Interfaces\" />
     <Folder Include="Profile\" />
     <Folder Include="Products\Helper\" />
+    <Folder Include="Cart\" />
+    <Folder Include="Cart\DTOs\" />
+    <Folder Include="Cart\Interface\" />
+    <Folder Include="Cart\Commands\" />
+    <Folder Include="Cart\Handlers\" />
+    <Folder Include="Cart\Queries\" />
   </ItemGroup>
 </Project>

@@ -73,6 +73,7 @@ public class AuthService : IAuthService
     {
         return Task.FromResult(new AuthResponse
         {
+            UserId = user.Id,
             Token = _tokenService.CreateToken(user),
             RefreshToken = user.RefreshToken,
             Username = user.Username,

@@ -12,6 +12,8 @@ namespace FluxStore.Application.Interfaces
         public DbSet<ProductRating> Ratings { get; }
         public DbSet<ProductReview> Reviews { get; }
         public DbSet<PasswordResetToken> PasswordResetTokens { get; set; }
+        public DbSet<CartEntity> Carts { get; set; }
+        public DbSet<CartItem> CartItems { get; set; }
 
         Task<int> SaveChangesAsync(CancellationToken cancellationToken);
     }

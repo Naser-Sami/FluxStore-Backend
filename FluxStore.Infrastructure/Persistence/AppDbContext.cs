@@ -15,6 +15,8 @@ namespace FluxStore.Infrastructure.Persistence
         public DbSet<ProductRating> Ratings { get; set; }
         public DbSet<ProductReview> Reviews { get; set; }
         public DbSet<PasswordResetToken> PasswordResetTokens { get; set; }
+        public DbSet<CartEntity> Carts { get; set; }
+        public DbSet<CartItem> CartItems { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

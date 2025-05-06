@@ -1,6 +1,4 @@
-﻿using FluxStore.Domain.Entities;
-
-namespace FluxStore.Application.Interfaces
+﻿namespace FluxStore.Application.Interfaces
 {
 	public interface IProductRepository
 	{

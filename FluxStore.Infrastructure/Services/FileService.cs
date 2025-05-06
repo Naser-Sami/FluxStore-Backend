@@ -3,11 +3,11 @@ using Microsoft.AspNetCore.Http;
 
 namespace FluxStore.Infrastructure.Services
 {
-	public class FileService : IFileService
-	{
-		public FileService()
-		{
-		}
+    public class FileService : IFileService
+    {
+        public FileService()
+        {
+        }
 
         public async Task<string> UploadImageAsync(IFormFile file)
         {

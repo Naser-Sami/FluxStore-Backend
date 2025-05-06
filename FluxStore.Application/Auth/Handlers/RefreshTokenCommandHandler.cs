@@ -38,6 +38,7 @@ namespace FluxStore.Application.Auth.Handlers
 
             return new AuthResponse
             {
+                UserId = user.Id,
                 Token = newAccessToken,
                 RefreshToken = newRefreshToken,
                 Email = user.Email,

@@ -1,4 +1,5 @@
-﻿using FluxStore.Application.Common.Interfaces;
+﻿using FluxStore.Application.Cart.Interface;
+using FluxStore.Application.Common.Interfaces;
 using FluxStore.Application.Interfaces;
 using FluxStore.Domain.Interfaces;
 using FluxStore.Domain.Repositories;
@@ -28,6 +29,7 @@ public static class DependencyInjection
         services.AddScoped<ICategoryRepository, CategoryRepository>();
         services.AddScoped<IProductRepository, ProductRepository>();
         services.AddScoped<IFileService, FileService>();
+        services.AddScoped<ICartRepository, CartRepository>();
         services.AddScoped<IApplicationDbContext>(provider => provider.GetService<AppDbContext>()!);
 
         return services;
