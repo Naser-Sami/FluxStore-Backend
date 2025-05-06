@@ -13,7 +13,7 @@ public class CreateProductCommand : IRequest<Result<ProductDto>>
     public string? Description { get; set; }
 
     [SwaggerSchema("Price")]
-    public decimal Price { get; set; }
+    public double Price { get; set; }
 
     [SwaggerSchema("Main image")]
     public IFormFile? ImageUrl { get; set; }

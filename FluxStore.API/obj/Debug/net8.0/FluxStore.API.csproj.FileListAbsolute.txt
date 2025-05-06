@@ -55,6 +55,7 @@
 /Users/naserebedo/Developer/__Mobile__/_FluxStore_/Backend/FluxStore/FluxStore.API/bin/Debug/net8.0/Microsoft.Win32.SystemEvents.dll
 /Users/naserebedo/Developer/__Mobile__/_FluxStore_/Backend/FluxStore/FluxStore.API/bin/Debug/net8.0/MimeKit.dll
 /Users/naserebedo/Developer/__Mobile__/_FluxStore_/Backend/FluxStore/FluxStore.API/bin/Debug/net8.0/Mono.TextTemplating.dll
+/Users/naserebedo/Developer/__Mobile__/_FluxStore_/Backend/FluxStore/FluxStore.API/bin/Debug/net8.0/Swashbuckle.AspNetCore.Annotations.dll
 /Users/naserebedo/Developer/__Mobile__/_FluxStore_/Backend/FluxStore/FluxStore.API/bin/Debug/net8.0/Swashbuckle.AspNetCore.Swagger.dll
 /Users/naserebedo/Developer/__Mobile__/_FluxStore_/Backend/FluxStore/FluxStore.API/bin/Debug/net8.0/Swashbuckle.AspNetCore.SwaggerGen.dll
 /Users/naserebedo/Developer/__Mobile__/_FluxStore_/Backend/FluxStore/FluxStore.API/bin/Debug/net8.0/Swashbuckle.AspNetCore.SwaggerUI.dll
@@ -156,7 +157,6 @@
 /Users/naserebedo/Developer/__Mobile__/_FluxStore_/Backend/FluxStore/FluxStore.API/obj/Debug/net8.0/FluxStore.API.MvcApplicationPartsAssemblyInfo.cs
 /Users/naserebedo/Developer/__Mobile__/_FluxStore_/Backend/FluxStore/FluxStore.API/obj/Debug/net8.0/FluxStore.API.MvcApplicationPartsAssemblyInfo.cache
 /Users/naserebedo/Developer/__Mobile__/_FluxStore_/Backend/FluxStore/FluxStore.API/obj/Debug/net8.0/FluxStore.API.sourcelink.json
-/Users/naserebedo/Developer/__Mobile__/_FluxStore_/Backend/FluxStore/FluxStore.API/obj/Debug/net8.0/scopedcss/bundle/FluxStore.API.styles.css
 /Users/naserebedo/Developer/__Mobile__/_FluxStore_/Backend/FluxStore/FluxStore.API/obj/Debug/net8.0/staticwebassets.build.json
 /Users/naserebedo/Developer/__Mobile__/_FluxStore_/Backend/FluxStore/FluxStore.API/obj/Debug/net8.0/staticwebassets.development.json
 /Users/naserebedo/Developer/__Mobile__/_FluxStore_/Backend/FluxStore/FluxStore.API/obj/Debug/net8.0/staticwebassets/msbuild.FluxStore.API.Microsoft.AspNetCore.StaticWebAssets.props
@@ -164,13 +164,13 @@
 /Users/naserebedo/Developer/__Mobile__/_FluxStore_/Backend/FluxStore/FluxStore.API/obj/Debug/net8.0/staticwebassets/msbuild.buildMultiTargeting.FluxStore.API.props
 /Users/naserebedo/Developer/__Mobile__/_FluxStore_/Backend/FluxStore/FluxStore.API/obj/Debug/net8.0/staticwebassets/msbuild.buildTransitive.FluxStore.API.props
 /Users/naserebedo/Developer/__Mobile__/_FluxStore_/Backend/FluxStore/FluxStore.API/obj/Debug/net8.0/staticwebassets.pack.json
+/Users/naserebedo/Developer/__Mobile__/_FluxStore_/Backend/FluxStore/FluxStore.API/obj/Debug/net8.0/scopedcss/bundle/FluxStore.API.styles.css
 /Users/naserebedo/Developer/__Mobile__/_FluxStore_/Backend/FluxStore/FluxStore.API/obj/Debug/net8.0/FluxStor.CCF05B58.Up2Date
 /Users/naserebedo/Developer/__Mobile__/_FluxStore_/Backend/FluxStore/FluxStore.API/obj/Debug/net8.0/FluxStore.API.dll
 /Users/naserebedo/Developer/__Mobile__/_FluxStore_/Backend/FluxStore/FluxStore.API/obj/Debug/net8.0/refint/FluxStore.API.dll
 /Users/naserebedo/Developer/__Mobile__/_FluxStore_/Backend/FluxStore/FluxStore.API/obj/Debug/net8.0/FluxStore.API.pdb
 /Users/naserebedo/Developer/__Mobile__/_FluxStore_/Backend/FluxStore/FluxStore.API/obj/Debug/net8.0/FluxStore.API.genruntimeconfig.cache
 /Users/naserebedo/Developer/__Mobile__/_FluxStore_/Backend/FluxStore/FluxStore.API/obj/Debug/net8.0/ref/FluxStore.API.dll
-/Users/naserebedo/Developer/__Mobile__/_FluxStore_/Backend/FluxStore/FluxStore.API/bin/Debug/net8.0/Swashbuckle.AspNetCore.Annotations.dll
 /Users/naserebedo/Developer/__Mobile__/_FluxStore_/Backend/FluxStore/FluxStore.API/bin/Debug/net8.0/FluxStore.API.staticwebassets.endpoints.json
 /Users/naserebedo/Developer/__Mobile__/_FluxStore_/Backend/FluxStore/FluxStore.API/obj/Debug/net8.0/staticwebassets.build.endpoints.json
 /Users/naserebedo/Developer/__Mobile__/_FluxStore_/Backend/FluxStore/FluxStore.API/obj/Debug/net8.0/staticwebassets/msbuild.FluxStore.API.Microsoft.AspNetCore.StaticWebAssetEndpoints.props

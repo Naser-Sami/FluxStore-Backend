@@ -20,14 +20,16 @@ namespace FluxStore.API.Controllers
 			_mediator = mediator;
 		}
 
-		[HttpGet]
-        public async Task<IActionResult> GetAll()
+
+        [HttpGet]
+        public async Task<IActionResult> GetAllProducts([FromQuery] GetAllProductsQuery query)
         {
-            var result = await _mediator.Send(new GetAllProductsQuery());
+            var result = await _mediator.Send(query);
             return result.IsSuccess ? Ok(result.Data) : BadRequest(result.Message);
         }
 
-		[HttpGet("{id:guid}")]
+
+        [HttpGet("{id:guid}")]
 		public async Task<IActionResult> GetById(Guid id)
 		{
 			var result = await _mediator.Send(new GetProductByIdQuery(id));

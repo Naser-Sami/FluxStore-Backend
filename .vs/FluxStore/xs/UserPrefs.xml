@@ -1,43 +1,34 @@
-﻿<Properties StartupConfiguration="{AEA81E27-68A3-43C4-83B3-767FBACCE9EE}|https" GitUserInfo="UsingGIT">
+﻿<Properties GitUserInfo="UsingGIT" StartupConfiguration="{AEA81E27-68A3-43C4-83B3-767FBACCE9EE}|https">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.ItemProperties.FluxStore.API PreferredExecutionTarget="/System/Volumes/Preboot/Cryptexes/App/System/Applications/Safari.app" />
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.Workbench ActiveDocument="FluxStore.Application/Products/Handlers/CreateProductCommandHandler.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="FluxStore.Application/Products/Handlers/GetAllProductsQueryHandler.cs">
     <Files>
-      <File FileName="FluxStore.API/Controllers/ProductsController.cs" Line="43" Column="10" />
-      <File FileName="FluxStore.Application/Products/Handlers/CreateProductCommandHandler.cs" Line="36" Column="44" />
-      <File FileName="FluxStore.Infrastructure/Services/FileService.cs" Line="8" Column="3" />
-      <File FileName="FluxStore.Application/Products/Commands/CreateProductCommand.cs" Line="35" Column="2" />
-      <File FileName="FluxStore.Application/Products/DTOs/ProductDto.cs" Line="4" Column="6" />
+      <File FileName="FluxStore.API/Controllers/ProductsController.cs" Line="25" Column="76" />
+      <File FileName="FluxStore.Application/Products/Handlers/GetAllProductsQueryHandler.cs" Line="40" Column="77" />
+      <File FileName="FluxStore.Application/Products/Helper/PaginatedList.cs" Line="2" Column="2" />
+      <File FileName="FluxStore.Application/Products/Queries/GetAllProductsQuery.cs" Line="17" Column="44" />
+      <File FileName="FluxStore.Application/Products/DTOs/ProductDto.cs" Line="15" Column="2" />
+      <File FileName="FluxStore.Application/Products/Handlers/GetProductDetailsQueryHandler.cs" Line="47" Column="50" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="FluxStore">
-            <Node name="FluxStore.API">
-              <Node name="Controllers" expanded="True" />
-              <Node name="wwwroot" expanded="True">
-                <Node name="uploads" expanded="True" />
-              </Node>
-            </Node>
             <Node name="FluxStore.Application">
+              <Node name="Interfaces" expanded="True" />
               <Node name="Products" expanded="True">
                 <Node name="Commands" expanded="True" />
                 <Node name="DTOs" expanded="True" />
                 <Node name="Handlers" expanded="True">
-                  <Node name="CreateProductCommandHandler.cs" selected="True" />
+                  <Node name="GetAllProductsQueryHandler.cs" selected="True" />
                 </Node>
+                <Node name="Helper" expanded="True" />
                 <Node name="Interfaces" expanded="True" />
                 <Node name="Mapper" expanded="True" />
                 <Node name="Queries" expanded="True" />
               </Node>
-              <Node name="User" expanded="True">
-                <Node name="Handlers" expanded="True" />
-                <Node name="Interfaces" expanded="True" />
-              </Node>
             </Node>
-            <Node name="FluxStore.Infrastructure" expanded="True">
+            <Node name="FluxStore.Infrastructure">
+              <Node name="Repositories" expanded="True" />
               <Node name="Services" expanded="True" />
             </Node>
           </Node>
@@ -47,7 +38,10 @@
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore>
-      <Breakpoint file="/Users/naserebedo/Developer/__Mobile__/_FluxStore_/Backend/FluxStore/FluxStore.Application/Products/Handlers/CreateProductCommandHandler.cs" relfile="FluxStore.Application/Products/Handlers/CreateProductCommandHandler.cs" line="24" column="1" />
+      <Breakpoint file="/Users/naserebedo/Developer/__Mobile__/_FluxStore_/Backend/FluxStore/FluxStore.Application/Products/Handlers/GetAllProductsQueryHandler.cs" relfile="FluxStore.Application/Products/Handlers/GetAllProductsQueryHandler.cs" line="23" column="1" />
     </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.FluxStore.API PreferredExecutionTarget="/System/Volumes/Preboot/Cryptexes/App/System/Applications/Safari.app" />
+  <MultiItemStartupConfigurations />
 </Properties>

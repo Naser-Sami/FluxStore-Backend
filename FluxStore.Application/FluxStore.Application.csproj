@@ -24,6 +24,7 @@
     <None Remove="Category\" />
     <None Remove="Products\Mapper\" />
     <None Remove="Interfaces\" />
+    <None Remove="Products\Helper\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Common\" />
@@ -35,5 +36,6 @@
     <Folder Include="Products\Mapper\" />
     <Folder Include="Interfaces\" />
     <Folder Include="Profile\" />
+    <Folder Include="Products\Helper\" />
   </ItemGroup>
 </Project>

@@ -47,6 +47,7 @@ namespace FluxStore.Application.Products.Handlers
                 AvailableColors = product.AvailableColors,
                 AvailableSizes = product.AvailableSizes,
                 AverageRating = Math.Round(avgRating, 1),
+                Discount = product.Discount,
                 Reviews = product.Reviews.Select(r => new ProductReviewDto
                 {
                     ReviewerName = r.ReviewerName,
