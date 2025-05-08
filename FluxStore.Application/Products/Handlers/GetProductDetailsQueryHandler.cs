@@ -51,11 +51,11 @@ namespace FluxStore.Application.Products.Handlers
                 Reviews = product.Reviews.Select(r => new ProductReviewDto
                 {
                     ReviewerName = r.ReviewerName,
-                    ReviewerImage = r.ReviewerImage,
-                    Text = r.Description,
+                    ReviewerImage = r.ReviewerImage ?? "",
+                    Description = r.Description,
                     Date = r.Date,
                     Rating = r.Rating,
-                    Images = r.Images
+                    Images = r.Images ?? new List<string>()
                 }).ToList()
             };
 

@@ -149,7 +149,7 @@ dotnet ef migrations remove --startup-project ../FluxStore.API
 
 dotnet ef migrations remove ProductsDetails --startup-project ../FluxStore.API
 
-dotnet ef migrations add CartsTableAndCartItemsTable --startup-project ../FluxStore.API
+dotnet ef migrations add UpdatRating --startup-project ../FluxStore.API
 
 dotnet ef migrations add ProductReviewTable --startup-project ../FluxStore.API
 

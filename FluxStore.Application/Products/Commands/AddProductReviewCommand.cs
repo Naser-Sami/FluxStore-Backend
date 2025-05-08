@@ -1,14 +1,24 @@
 ﻿using FluxStore.Application.Common;
+using FluxStore.Application.Products.DTOs;
 using MediatR;
+using Microsoft.AspNetCore.Http;
+using Swashbuckle.AspNetCore.Annotations;
 
 namespace FluxStore.Application.Products.Commands
 {
-    public class AddProductReviewCommand : IRequest<Result>
+    public class AddProductReviewCommand : IRequest<Result<ProductReviewDto>>
     {
+        [SwaggerSchema("Product id")]
         public Guid ProductId { get; set; }
-        public int Rating { get; set; }  // 1-5
+
+        [SwaggerSchema("Rating")]
+        public double Rating { get; set; }
+
+        [SwaggerSchema("Description")]
         public string Description { get; set; } = string.Empty;
-        public List<string>? Images { get; set; }
+
+        [SwaggerSchema("Review images")]
+        public List<IFormFile>? Images { get; set; }
     }
 }
 

@@ -8,6 +8,9 @@
         public double UnitPrice { get; set; }
         public int Quantity { get; set; }
         public double Total => UnitPrice * Quantity;
+
+        public string? SelectedColor { get; set; }
+        public string? SelectedSize { get; set; }
     }
 }
 

@@ -69,13 +69,15 @@ namespace FluxStore.API.Controllers
         }
 
         [HttpPost("add-review")]
-        public async Task<IActionResult> AddReview([FromBody] AddProductReviewCommand command)
+        [Consumes("multipart/form-data")]
+        public async Task<IActionResult> AddReview([FromForm] AddProductReviewCommand command)
         {
             var result = await _mediator.Send(command);
+
             if (!result.IsSuccess)
                 return BadRequest(new { message = result.Message });
 
-            return Ok("Success");
+            return Ok(result.Data);
         }
     }
 }

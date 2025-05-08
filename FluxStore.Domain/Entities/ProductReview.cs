@@ -7,7 +7,7 @@
         public string? ReviewerImage { get; set; }
         public string Description { get; set; } = string.Empty;
         public DateTime Date { get; set; }
-        public int Rating { get; set; }
+        public double Rating { get; set; }
         public List<string>? Images { get; set; }
 
         public Guid ProductId { get; set; }

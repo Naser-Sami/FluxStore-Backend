@@ -38,6 +38,8 @@ namespace FluxStore.Application.Cart.Handlers
                     ImageUrl = product?.ImageUrl ?? "",
                     UnitPrice = item.UnitPrice,
                     Quantity = item.Quantity,
+                    SelectedColor = item.SelectedColor,
+                    SelectedSize = item.SelectedSize
                 });
             }
 

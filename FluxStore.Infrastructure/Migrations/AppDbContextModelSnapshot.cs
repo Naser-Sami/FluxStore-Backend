@@ -135,10 +135,10 @@ namespace FluxStore.Infrastructure.Migrations
                     b.Property<Guid>("ProductId")
                         .HasColumnType("uniqueidentifier");
 
-                    b.Property<int>("Rating")
+                    b.Property<double>("Rating")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("int")
-                        .HasDefaultValue(1)
+                        .HasColumnType("float")
+                        .HasDefaultValue(1.0)
                         .HasComment("Rating value from 1 to 5");
 
                     b.HasKey("Id");
@@ -169,8 +169,8 @@ namespace FluxStore.Infrastructure.Migrations
                     b.Property<Guid>("ProductId")
                         .HasColumnType("uniqueidentifier");
 
-                    b.Property<int>("Rating")
-                        .HasColumnType("int");
+                    b.Property<double>("Rating")
+                        .HasColumnType("float");
 
                     b.Property<string>("ReviewerImage")
                         .HasMaxLength(1000)
